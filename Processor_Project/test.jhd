@@ -1,0 +1,3 @@
+MODULE test
+	SUBMODULE Reg_File
+		INSTANCE XLXI_1

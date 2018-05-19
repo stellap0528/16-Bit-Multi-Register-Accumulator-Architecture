@@ -1,0 +1,2 @@
+verilog isim_temp "../CompArch_Project_Xilinx_project/Mux_4bit_2i_1o.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

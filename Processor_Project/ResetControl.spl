@@ -1,0 +1,10 @@
+[Inputs]
+reset_in
+clk
+=input_data[15:0]=
+[Outputs]
+reset
+[BiDir]
+[ATTRIBUTES]
+VeriModel ResetControl
+

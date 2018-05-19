@@ -1,0 +1,19 @@
+
+
+NET "a" LOC = R15;
+NET "b" LOC = R16;
+NET "c" LOC = P17;
+NET "Clock" LOC = C9;
+NET "d" LOC = M15;
+NET "e" LOC = M18;
+NET "rs" LOC = L18;
+NET "rw" LOC = L17;
+NET "sf_e" LOC = D16;
+
+
+NET "Reset" LOC = K17;
+
+# PlanAhead Generated IO constraints 
+
+NET "Reset" IOSTANDARD = LVTTL;
+NET "Reset" PULLDOWN;

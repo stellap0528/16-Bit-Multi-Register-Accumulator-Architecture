@@ -1,0 +1,3 @@
+verilog isim_temp "../CompArch_Project_Xilinx_project/SignExtend_12bit.v"
+verilog isim_temp "../CompArch_Project_Xilinx_project/SignExtend_12bit_test.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

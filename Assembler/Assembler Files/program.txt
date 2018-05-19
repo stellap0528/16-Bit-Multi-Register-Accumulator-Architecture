@@ -1,0 +1,84 @@
+# initialize $in
+lui 0x0100
+ori 0x03B0
+move $in, 0
+
+# Move Set Input as the argument
+move $in, 1                # $acc = $in
+move $t0, 0                # $t0 = $acc
+
+# During Execution
+# s0 → n
+# s1 → m
+relPrime:
+        # Backup $ra, $s0, $s1
+        move $sp, 1            # $acc = $sp
+        addi -3                # $acc = $acc - 3
+        move $sp, 0            # $sp = $acc
+        move $ra, 1            # $acc = $ra
+        store $sp, 0           # Mem[$sp + 0] = $acc
+        move $s0, 1            # $acc = $s0
+        store $sp, 1           # Mem[$sp+1] = $acc
+        move $s1, 1            # $acc = $s1
+        store $sp, 2           # Mem[$sp+2] = $acc
+
+        move $t0, 1            # $acc = $t0
+        move $s0, 0            # $s0 = $acc
+        loadi 2                # $acc = 2
+        move $t1, 0            # $t1 = $acc
+        move $s1, 0            # $s1 = $acc
+loop:
+        jal gcd                # goto gcd
+        addi -1                # $acc = $acc - 1
+        move $iszero, 1        # $acc = $iszero
+        jump1 exitloop         # goto exitloop if $acc[15] = 1
+        move $s1, 1            # $acc = $s1
+        addi 1                 # $acc = $acc + 1
+        move $s1, 0            # $s1 = $acc
+        move $t1, 0            # $t1 = $acc
+        move $s0, 1            # $acc = $s0
+        move $t0, 0            # $t0 = $acc
+        jump loop              # goto loop
+exitloop:
+		# Put m into output reg
+		move $s1, 1            # $acc = $s1
+		move $out, 0           # $out = $acc
+        # Restore $ra, $s0, $s1
+        load $sp, 2            # $acc = Mem[$sp+2]
+        move $s1, 0            # $s1 = $acc
+        load $sp, 1            # $acc = Mem[$sp+1]
+        move $s0, 0            # $s0 = $acc
+        load $sp, 0            # $acc = Mem[$sp+0]
+        move $ra, 0            # $ra = $acc
+        move $sp, 1            # $acc = $sp
+        addi 3                 # $acc = $acc + 3
+        move $sp, 0            # $sp = $acc
+        jump finish            # goto end of program
+gcd:
+        move $t0, 1            # $acc = $t0
+        addi 0                 # $acc = $acc + 0
+        move $iszero, 1        # $acc = $iszero
+        jump0 gcdloop          # goto gcdloop if $acc[15] = 0
+        move $t1, 1            # $acc = $t1
+        move $t2, 0            # $t2 = $acc
+        jr $ra, 0              # goto address in $ra+0
+gcdloop:
+        move $t1, 1            # $acc = $t1
+        addi 0                 # $acc = $acc + 0
+        move $iszero, 1        # $acc = $iszero
+        jump1 exitgcdloop     # goto exitgcdloop if $acc[15] = 1
+        move $t1, 1            # $acc = $t1
+        sub $t0, 1             # $acc = $acc - $t0
+        jump0 else             # goto else if $acc[15] = 0
+        move $t1, 1            # $acc = $t1
+        subr $t0, 0            # $t0 = $t0 - $acc
+        jump gcdloop           # goto gcdloop
+else:
+        move $t0, 1            # $acc = $t0
+        subr $t1, 0            # $t1 = $t1 - $acc
+        jump gcdloop           # goto gcdloop
+exitgcdloop:
+        move $t0, 1            # $acc = $t0
+        move $t2, 0            # $t2 = $acc
+        jr $ra, 0              # goto address in $ra + 0
+finish:

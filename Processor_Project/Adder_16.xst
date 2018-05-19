@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/xst"
+elaborate
+-ifn Adder_16.prj
+-ifmt mixed

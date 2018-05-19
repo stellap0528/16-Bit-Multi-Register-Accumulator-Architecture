@@ -1,0 +1,135 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : shift4.vf
+// /___/   /\     Timestamp : 11/11/2017 20:28:54
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/ipcore_dir" -intstyle ise -family spartan3e -verilog "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/shift4.vf" -w "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/shift4.sch"
+//Design Name: shift4
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_shift4(D0, 
+                           D1, 
+                           S0, 
+                           O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module shift4(CLK, 
+              count, 
+              enable, 
+              RESET, 
+              up, 
+              sel0, 
+              sel1, 
+              sel2, 
+              sel3);
+
+    input CLK;
+    input count;
+    input enable;
+    input RESET;
+    input up;
+   output sel0;
+   output sel1;
+   output sel2;
+   output sel3;
+   
+   wire isel0;
+   wire isel1;
+   wire isel2;
+   wire isel3;
+   wire XLXN_30;
+   wire XLXN_76;
+   wire XLXN_77;
+   wire XLXN_78;
+   wire XLXN_79;
+   
+   FDCPE #( .INIT(1'b0) ) XLXI_6 (.C(CLK), 
+                 .CE(count), 
+                 .CLR(XLXN_30), 
+                 .D(XLXN_76), 
+                 .PRE(RESET), 
+                 .Q(isel0));
+   FDCPE #( .INIT(1'b0) ) XLXI_13 (.C(CLK), 
+                  .CE(count), 
+                  .CLR(RESET), 
+                  .D(XLXN_77), 
+                  .PRE(XLXN_30), 
+                  .Q(isel1));
+   FDCPE #( .INIT(1'b0) ) XLXI_14 (.C(CLK), 
+                  .CE(count), 
+                  .CLR(RESET), 
+                  .D(XLXN_78), 
+                  .PRE(XLXN_30), 
+                  .Q(isel2));
+   FDCPE #( .INIT(1'b0) ) XLXI_15 (.C(CLK), 
+                  .CE(count), 
+                  .CLR(RESET), 
+                  .D(XLXN_79), 
+                  .PRE(XLXN_30), 
+                  .Q(isel3));
+   (* HU_SET = "XLXI_21_7" *) 
+   M2_1_MXILINX_shift4  XLXI_21 (.D0(isel1), 
+                                .D1(isel3), 
+                                .S0(up), 
+                                .O(XLXN_76));
+   (* HU_SET = "XLXI_56_4" *) 
+   M2_1_MXILINX_shift4  XLXI_56 (.D0(isel2), 
+                                .D1(isel0), 
+                                .S0(up), 
+                                .O(XLXN_77));
+   (* HU_SET = "XLXI_57_5" *) 
+   M2_1_MXILINX_shift4  XLXI_57 (.D0(isel3), 
+                                .D1(isel1), 
+                                .S0(up), 
+                                .O(XLXN_78));
+   (* HU_SET = "XLXI_58_6" *) 
+   M2_1_MXILINX_shift4  XLXI_58 (.D0(isel0), 
+                                .D1(isel2), 
+                                .S0(up), 
+                                .O(XLXN_79));
+   AND2  XLXI_64 (.I0(isel0), 
+                 .I1(enable), 
+                 .O(sel0));
+   AND2  XLXI_65 (.I0(isel1), 
+                 .I1(enable), 
+                 .O(sel1));
+   AND2  XLXI_66 (.I0(isel2), 
+                 .I1(enable), 
+                 .O(sel2));
+   AND2  XLXI_67 (.I0(isel3), 
+                 .I1(enable), 
+                 .O(sel3));
+   GND  XLXI_73 (.G(XLXN_30));
+endmodule

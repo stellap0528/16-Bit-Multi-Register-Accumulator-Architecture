@@ -1,0 +1,7 @@
+verilog work "ZeroExtend_12bit.v"
+verilog work "SignExtend_8bit.v"
+verilog work "SignExtend_12bit.v"
+verilog work "Reg_File.v"
+verilog work "Mux_16bit_2i_1o.v"
+verilog work "ALU_16bit.v"
+verilog work "Processor_Integration_3.vf"

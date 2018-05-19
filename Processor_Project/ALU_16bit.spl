@@ -1,0 +1,12 @@
+[Inputs]
+=a[15:0]=
+=b[15:0]=
+=ALUctrl[2:0]=
+[Outputs]
+iszero
+Overflow
+=ALUOut[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel ALU_16bit
+

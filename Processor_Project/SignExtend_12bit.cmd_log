@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/SignExtend_12bit.xst" -ofn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/SignExtend_12bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "SignExtend_12bit.ngc" SignExtend_12bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SignExtend_12bit_map.ncd SignExtend_12bit.ngd SignExtend_12bit.pcf 
+par -w -intstyle ise -ol high -t 1 SignExtend_12bit_map.ncd SignExtend_12bit.ncd SignExtend_12bit.pcf 
+par -w -intstyle ise -ol high -t 1 SignExtend_12bit_map.ncd SignExtend_12bit.ncd SignExtend_12bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SignExtend_12bit.twx SignExtend_12bit.ncd -o SignExtend_12bit.twr SignExtend_12bit.pcf 
+vhdtdtfi -lib work C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/CompArch_Project_Xilinx_project/SignExtend_12bit.v -lang verilog -prj CompArch_Project_Xilinx_project -o SignExtend_12bit.spl -module SignExtend_12bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SignExtend_12bit.spl C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/CompArch_Project_Xilinx_project/SignExtend_12bit.sym 

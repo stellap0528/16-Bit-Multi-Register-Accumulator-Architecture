@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Mux_16bit_6i_1o">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2017-10-31T15:25:42</timestamp>
+    <attr value="Mux_16bit_6i_1o" name="VeriModel" />
+    <pin polarity="Input" x="192" y="-496" name="s(2:0)" />
+    <pin polarity="Output" x="0" y="-256" name="r(15:0)" />
+    <pin polarity="Input" x="384" y="-400" name="a(15:0)" />
+    <pin polarity="Input" x="384" y="-336" name="b(15:0)" />
+    <pin polarity="Input" x="384" y="-272" name="c(15:0)" />
+    <pin polarity="Input" x="384" y="-208" name="d(15:0)" />
+    <pin polarity="Input" x="384" y="-144" name="e(15:0)" />
+    <pin polarity="Input" x="384" y="-80" name="f(15:0)" />
+    <graph>
+        <rect width="256" x="64" y="-448" height="448" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="200" y="64" type="symbol" />
+        <line x2="192" y1="-496" y2="-448" x1="192" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="164" y="-432" type="pin s(2:0)" />
+        <rect width="32" x="176" y="-496" height="48" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="144" y="-256" type="pin r(15:0)" />
+        <rect width="64" x="0" y="-268" height="24" />
+        <line x2="64" y1="-256" y2="-256" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="244" y="-400" type="pin a(15:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="244" y="-336" type="pin b(15:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="244" y="-272" type="pin c(15:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="244" y="-208" type="pin d(15:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="244" y="-144" type="pin e(15:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="252" y="-80" type="pin f(15:0)" />
+        <rect width="64" x="320" y="-412" height="24" />
+        <line x2="320" y1="-400" y2="-400" x1="384" />
+        <rect width="64" x="320" y="-348" height="24" />
+        <line x2="320" y1="-336" y2="-336" x1="384" />
+        <rect width="64" x="320" y="-284" height="24" />
+        <line x2="320" y1="-272" y2="-272" x1="384" />
+        <rect width="64" x="320" y="-220" height="24" />
+        <line x2="320" y1="-208" y2="-208" x1="384" />
+        <rect width="64" x="320" y="-156" height="24" />
+        <line x2="320" y1="-144" y2="-144" x1="384" />
+        <rect width="64" x="320" y="-92" height="24" />
+        <line x2="320" y1="-80" y2="-80" x1="384" />
+    </graph>
+</symbol>

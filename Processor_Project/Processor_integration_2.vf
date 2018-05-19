@@ -1,0 +1,209 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Processor_integration_2.vf
+// /___/   /\     Timestamp : 10/29/2017 22:24:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/ipcore_dir" -intstyle ise -family spartan3e -verilog "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Processor_integration_2.vf" -w "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Processor_integration_2.sch"
+//Design Name: Processor_integration_2
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FD16RE_MXILINX_Processor_integration_2(C, 
+                                              CE, 
+                                              D, 
+                                              R, 
+                                              Q);
+
+    input C;
+    input CE;
+    input [15:0] D;
+    input R;
+   output [15:0] Q;
+   
+   
+   FDRE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .D(D[0]), 
+              .R(R), 
+              .Q(Q[0]));
+   FDRE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .D(D[1]), 
+              .R(R), 
+              .Q(Q[1]));
+   FDRE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .D(D[2]), 
+              .R(R), 
+              .Q(Q[2]));
+   FDRE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .D(D[3]), 
+              .R(R), 
+              .Q(Q[3]));
+   FDRE #( .INIT(1'b0) ) I_Q4 (.C(C), 
+              .CE(CE), 
+              .D(D[4]), 
+              .R(R), 
+              .Q(Q[4]));
+   FDRE #( .INIT(1'b0) ) I_Q5 (.C(C), 
+              .CE(CE), 
+              .D(D[5]), 
+              .R(R), 
+              .Q(Q[5]));
+   FDRE #( .INIT(1'b0) ) I_Q6 (.C(C), 
+              .CE(CE), 
+              .D(D[6]), 
+              .R(R), 
+              .Q(Q[6]));
+   FDRE #( .INIT(1'b0) ) I_Q7 (.C(C), 
+              .CE(CE), 
+              .D(D[7]), 
+              .R(R), 
+              .Q(Q[7]));
+   FDRE #( .INIT(1'b0) ) I_Q8 (.C(C), 
+              .CE(CE), 
+              .D(D[8]), 
+              .R(R), 
+              .Q(Q[8]));
+   FDRE #( .INIT(1'b0) ) I_Q9 (.C(C), 
+              .CE(CE), 
+              .D(D[9]), 
+              .R(R), 
+              .Q(Q[9]));
+   FDRE #( .INIT(1'b0) ) I_Q10 (.C(C), 
+               .CE(CE), 
+               .D(D[10]), 
+               .R(R), 
+               .Q(Q[10]));
+   FDRE #( .INIT(1'b0) ) I_Q11 (.C(C), 
+               .CE(CE), 
+               .D(D[11]), 
+               .R(R), 
+               .Q(Q[11]));
+   FDRE #( .INIT(1'b0) ) I_Q12 (.C(C), 
+               .CE(CE), 
+               .D(D[12]), 
+               .R(R), 
+               .Q(Q[12]));
+   FDRE #( .INIT(1'b0) ) I_Q13 (.C(C), 
+               .CE(CE), 
+               .D(D[13]), 
+               .R(R), 
+               .Q(Q[13]));
+   FDRE #( .INIT(1'b0) ) I_Q14 (.C(C), 
+               .CE(CE), 
+               .D(D[14]), 
+               .R(R), 
+               .Q(Q[14]));
+   FDRE #( .INIT(1'b0) ) I_Q15 (.C(C), 
+               .CE(CE), 
+               .D(D[15]), 
+               .R(R), 
+               .Q(Q[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module Processor_integration_2(Asel, 
+                               Awrite, 
+                               Bsel, 
+                               Bwrite, 
+                               Clock, 
+                               Data_In, 
+                               IR_Write, 
+                               iszero_write, 
+                               is_zero_data, 
+                               ITypeSel, 
+                               reg_write, 
+                               write_address, 
+                               A, 
+                               B, 
+                               IR);
+
+    input Asel;
+    input Awrite;
+    input Bsel;
+    input Bwrite;
+    input Clock;
+    input [15:0] Data_In;
+    input IR_Write;
+    input iszero_write;
+    input [15:0] is_zero_data;
+    input ITypeSel;
+    input reg_write;
+    input [3:0] write_address;
+   output [15:0] A;
+   output [15:0] B;
+   output [15:0] IR;
+   
+   wire low;
+   wire [15:0] XLXN_45;
+   wire [15:0] XLXN_46;
+   wire [15:0] XLXN_47;
+   wire [15:0] XLXN_48;
+   wire [15:0] XLXN_53;
+   wire [15:0] XLXN_56;
+   wire [15:0] XLXN_57;
+   wire [15:0] XLXN_61;
+   wire [15:0] IR_DUMMY;
+   
+   assign IR[15:0] = IR_DUMMY[15:0];
+   (* HU_SET = "XLXI_15_0" *) 
+   FD16RE_MXILINX_Processor_integration_2  XLXI_15 (.C(Clock), 
+                                                   .CE(IR_Write), 
+                                                   .D(Data_In[15:0]), 
+                                                   .R(low), 
+                                                   .Q(IR_DUMMY[15:0]));
+   (* HU_SET = "XLXI_16_1" *) 
+   FD16RE_MXILINX_Processor_integration_2  XLXI_16 (.C(Clock), 
+                                                   .CE(Awrite), 
+                                                   .D(XLXN_47[15:0]), 
+                                                   .R(low), 
+                                                   .Q(A[15:0]));
+   (* HU_SET = "XLXI_17_2" *) 
+   FD16RE_MXILINX_Processor_integration_2  XLXI_17 (.C(Clock), 
+                                                   .CE(Bwrite), 
+                                                   .D(XLXN_45[15:0]), 
+                                                   .R(low), 
+                                                   .Q(B[15:0]));
+   Reg_File  XLXI_18 (.clock(Clock), 
+                     .iszero_data(is_zero_data[15:0]), 
+                     .iszero_write(iszero_write), 
+                     .ra(IR_DUMMY[11:8]), 
+                     .reg_write(reg_write), 
+                     .wa(write_address[3:0]), 
+                     .write_data(IR_DUMMY[15:0]), 
+                     .acc_data(XLXN_48[15:0]), 
+                     .read_data(XLXN_46[15:0]));
+   GND  XLXI_19 (.G(low));
+   Mux_16bit_2i_1o  XLXI_25 (.a(XLXN_61[15:0]), 
+                            .b(XLXN_48[15:0]), 
+                            .s(Asel), 
+                            .r(XLXN_47[15:0]));
+   Mux_16bit_2i_1o  XLXI_26 (.a(XLXN_46[15:0]), 
+                            .b(XLXN_53[15:0]), 
+                            .s(Bsel), 
+                            .r(XLXN_45[15:0]));
+   Mux_16bit_2i_1o  XLXI_27 (.a(XLXN_56[15:0]), 
+                            .b(XLXN_57[15:0]), 
+                            .s(ITypeSel), 
+                            .r(XLXN_53[15:0]));
+   ZeroExtend_12bit  XLXI_28 (.a(IR_DUMMY[11:0]), 
+                             .r(XLXN_56[15:0]));
+   SignExtend_12bit  XLXI_29 (.a(IR_DUMMY[11:0]), 
+                             .r(XLXN_57[15:0]));
+   SignExtend_8bit  XLXI_30 (.a(IR_DUMMY[7:0]), 
+                            .r(XLXN_61[15:0]));
+endmodule

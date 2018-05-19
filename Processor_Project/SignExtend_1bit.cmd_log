@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/SignExtend_1bit.xst" -ofn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/SignExtend_1bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "SignExtend_1bit.ngc" SignExtend_1bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SignExtend_1bit_map.ncd SignExtend_1bit.ngd SignExtend_1bit.pcf 
+par -w -intstyle ise -ol high -t 1 SignExtend_1bit_map.ncd SignExtend_1bit.ncd SignExtend_1bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SignExtend_1bit.twx SignExtend_1bit.ncd -o SignExtend_1bit.twr SignExtend_1bit.pcf 
+vhdtdtfi -lib work C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/CompArch_Project_Xilinx_project/SignExtend_1bit.v -lang verilog -prj CompArch_Project_Xilinx_project -o SignExtend_1bit.spl -module SignExtend_1bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SignExtend_1bit.spl C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/CompArch_Project_Xilinx_project/SignExtend_1bit.sym 
+xst -intstyle ise -ifn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/SignExtend_1bit.xst" -ofn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/SignExtend_1bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "SignExtend_1bit.ngc" SignExtend_1bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SignExtend_1bit_map.ncd SignExtend_1bit.ngd SignExtend_1bit.pcf 
+par -w -intstyle ise -ol high -t 1 SignExtend_1bit_map.ncd SignExtend_1bit.ncd SignExtend_1bit.pcf 
+par -w -intstyle ise -ol high -t 1 SignExtend_1bit_map.ncd SignExtend_1bit.ncd SignExtend_1bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SignExtend_1bit.twx SignExtend_1bit.ncd -o SignExtend_1bit.twr SignExtend_1bit.pcf 
+xst -intstyle ise -ifn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/SignExtend_1bit.xst" -ofn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/SignExtend_1bit.syr" 
+xst -intstyle ise -ifn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/SignExtend_1bit.xst" -ofn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/SignExtend_1bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "SignExtend_1bit.ngc" SignExtend_1bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SignExtend_1bit_map.ncd SignExtend_1bit.ngd SignExtend_1bit.pcf 
+vhdtdtfi -lib work {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final SVN/Processor_Project/SignExtend_1bit.v} -lang verilog -prj Processor_Project -o SignExtend_1Bit.spl -module SignExtend_1Bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w SignExtend_1Bit.spl {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final SVN/Processor_Project/SignExtend_1Bit.sym} 

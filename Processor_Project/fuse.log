@@ -1,0 +1,63 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Final_Processor_Final_Processor_sch_tb_isim_beh.exe" -prj "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Final_Processor_Final_Processor_sch_tb_beh.prj" "work.Final_Processor_Final_Processor_sch_tb" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/ZeroExtend_4bit.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/ZeroExtend_12bit.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/SignExtend_8bit.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/SignExtend_1bit.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/SignExtend_12bit.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Reg_File.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Mux_4bit_3i_1o.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Mux_16bit_6i_1o.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Mux_16bit_4i_1o.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Mux_16bit_3i_1o.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Mux_16bit_2i_1o.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/LeftShift_4.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/ipcore_dir/dualportMem.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Control_Unit.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/check_noOp.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Append_Buffer.vf" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/ALU_16bit.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Adder_16.v" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Final_Processor.vf" into library work
+Analyzing Verilog file "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Final_Test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Final_Test.v" Line 17: Port isZero is not connected to this instance
+Completed static elaboration
+Compiling module ALU_16bit
+Compiling module FDRE
+Compiling module FD16RE_MXILINX_Final_Processor
+Compiling module Control_Unit
+Compiling module Mux_16bit_2i_1o
+Compiling module ZeroExtend_12bit
+Compiling module SignExtend_12bit
+Compiling module SignExtend_8bit
+Compiling module LeftShift_4
+Compiling module ZeroExtend_4bit
+Compiling module Mux_16bit_4i_1o
+Compiling module Mux_4bit_3i_1o
+Compiling module Adder_16
+Compiling module BUF
+Compiling module Append_Buffer_MUSER_Final_Proces...
+Compiling module Mux_16bit_6i_1o
+Compiling module check_noOp
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module dualportMem
+Compiling module Reg_File
+Compiling module Mux_16bit_3i_1o
+Compiling module SignExtend_1Bit
+Compiling module Final_Processor
+Compiling module Final_Processor_Final_Processor_...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 28 Verilog Units
+Built simulation executable C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Final_Processor_Final_Processor_sch_tb_isim_beh.exe
+Fuse Memory Usage: 34188 KB
+Fuse CPU Usage: 577 ms

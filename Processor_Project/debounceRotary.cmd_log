@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym debounceRotary {C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/debounceRotary.sch} {C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/debounceRotary.sym} 

@@ -1,0 +1,64 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Append_Buffer_drc.vf
+// /___/   /\     Timestamp : 10/31/2017 02:00:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -sympath "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/ipcore_dir" -intstyle ise -family spartan3e -verilog Append_Buffer_drc.vf -w "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Append_Buffer.sch"
+//Design Name: Append_Buffer
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Append_Buffer(Lower_12_Imm, 
+                     Upper_4_PC, 
+                     Append_Out);
+
+    input [11:0] Lower_12_Imm;
+    input [3:0] Upper_4_PC;
+   output [15:0] Append_Out;
+   
+   
+   BUF  XLXI_85 (.I(Lower_12_Imm[4]), 
+                .O(Append_Out[4]));
+   BUF  XLXI_86 (.I(Lower_12_Imm[3]), 
+                .O(Append_Out[3]));
+   BUF  XLXI_87 (.I(Lower_12_Imm[2]), 
+                .O(Append_Out[2]));
+   BUF  XLXI_88 (.I(Lower_12_Imm[1]), 
+                .O(Append_Out[1]));
+   BUF  XLXI_89 (.I(Lower_12_Imm[0]), 
+                .O(Append_Out[0]));
+   BUF  XLXI_91 (.I(Upper_4_PC[3]), 
+                .O(Append_Out[15]));
+   BUF  XLXI_92 (.I(Upper_4_PC[2]), 
+                .O(Append_Out[14]));
+   BUF  XLXI_93 (.I(Upper_4_PC[1]), 
+                .O(Append_Out[13]));
+   BUF  XLXI_94 (.I(Upper_4_PC[0]), 
+                .O(Append_Out[12]));
+   BUF  XLXI_95 (.I(Lower_12_Imm[11]), 
+                .O(Append_Out[11]));
+   BUF  XLXI_96 (.I(Lower_12_Imm[10]), 
+                .O(Append_Out[10]));
+   BUF  XLXI_97 (.I(Lower_12_Imm[9]), 
+                .O(Append_Out[9]));
+   BUF  XLXI_98 (.I(Lower_12_Imm[8]), 
+                .O(Append_Out[8]));
+   BUF  XLXI_99 (.I(Lower_12_Imm[7]), 
+                .O(Append_Out[7]));
+   BUF  XLXI_100 (.I(Lower_12_Imm[6]), 
+                 .O(Append_Out[6]));
+   BUF  XLXI_101 (.I(Lower_12_Imm[5]), 
+                 .O(Append_Out[5]));
+endmodule

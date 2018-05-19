@@ -1,0 +1,10 @@
+select figure at 1676 4392 8 -branches -sn=1
+select figure at 1775 2522 8 -branches -sn=1
+select all in 1775 2522 2436 2941 -branches -enclosed -sn=1
+select figure at 2382 2530 8 -branches -toggle -sn=1
+select figure at 2695 3825 8 -wires -sn=1
+select figure at 2551 3377 8 -wires -sn=1
+select figure at 2659 3771 8 -wires -sn=1
+select figure at 3064 3893 8 -wires -toggle -sn=1
+select figure at 2937 3886 8 -wires -toggle -sn=1
+select figure at 3432 4529 8 -wires -sn=1

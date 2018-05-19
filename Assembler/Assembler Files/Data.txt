@@ -1,0 +1,46 @@
+Instructions:
+load 0000
+store 0001
+jr 0010
+jump 0011
+jal 0100
+jump1 0101
+jump0 0110
+shiftl 0111
+shiftr 1000
+lui 1001
+ori 1010
+andi 1011
+loadi 1100
+addi 1101
+move 1111 000
+add 1111 001
+sub 1111 010
+subr 1111 011
+or 1111 100
+and 1111 101
+
+Registers:
+$0 0000
+$sp 0001
+$ra 0010
+$iszero 0011
+$s0 0100
+$s1 0101
+$s2 0110
+$s3 0111
+$t0 1000
+$t1 1001
+$t2 1010
+$t3 1011
+$t4 1100
+$in 1101
+$out 1110
+$acc 1111
+
+Start Address of Program:
+0
+
+Initial Memory:
+MEMORY_INITIALIZATION_RADIX=2;
+MEMORY_INITIALIZATION_VECTOR=

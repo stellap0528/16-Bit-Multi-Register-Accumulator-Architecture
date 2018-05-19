@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IOcounter4.v} -lang verilog -prj Processor_Project -o IOcounter4.spl -module IOcounter4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w IOcounter4.spl {C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IOcounter4.sym} 

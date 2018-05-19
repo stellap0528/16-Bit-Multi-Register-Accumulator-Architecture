@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Nov 11 20:35:31 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "a" LOCATE = SITE "R15" LEVEL 1;
+COMP "b" LOCATE = SITE "R16" LEVEL 1;
+COMP "c" LOCATE = SITE "P17" LEVEL 1;
+COMP "d" LOCATE = SITE "M15" LEVEL 1;
+COMP "e" LOCATE = SITE "M18" LEVEL 1;
+COMP "rs" LOCATE = SITE "L18" LEVEL 1;
+COMP "rw" LOCATE = SITE "L17" LEVEL 1;
+COMP "led0" LOCATE = SITE "F12" LEVEL 1;
+COMP "sf_e" LOCATE = SITE "D16" LEVEL 1;
+COMP "Rot_btn" LOCATE = SITE "V16" LEVEL 1;
+COMP "Clock" LOCATE = SITE "C9" LEVEL 1;
+COMP "Resetbtn" LOCATE = SITE "K17" LEVEL 1;
+COMP "switch1" LOCATE = SITE "L13" LEVEL 1;
+COMP "a_button" LOCATE = SITE "K18" LEVEL 1;
+COMP "b_button" LOCATE = SITE "G18" LEVEL 1;
+NET "Clock_BUFGP/IBUFG" BEL "Clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

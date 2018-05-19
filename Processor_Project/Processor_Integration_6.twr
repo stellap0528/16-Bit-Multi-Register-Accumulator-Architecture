@@ -1,0 +1,245 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml Processor_Integration_6.twx Processor_Integration_6.ncd -o
+Processor_Integration_6.twr Processor_Integration_6.pcf
+
+Design file:              Processor_Integration_6.ncd
+Physical constraint file: Processor_Integration_6.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clock
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+ALUctrl<0>  |   14.032(R)|   -1.389(R)|Clock_BUFGP       |   0.000|
+ALUctrl<1>  |   13.859(R)|   -0.843(R)|Clock_BUFGP       |   0.000|
+ALUctrl<2>  |   13.347(R)|   -0.398(R)|Clock_BUFGP       |   0.000|
+ALUwrite    |    4.578(R)|   -1.113(R)|Clock_BUFGP       |   0.000|
+Asel        |    2.997(R)|    0.076(R)|Clock_BUFGP       |   0.000|
+Awrite      |    3.208(R)|   -0.507(R)|Clock_BUFGP       |   0.000|
+Bsel        |    3.903(R)|   -0.771(R)|Clock_BUFGP       |   0.000|
+Bwrite      |    2.610(R)|    0.460(R)|Clock_BUFGP       |   0.000|
+IRwrite     |    4.239(R)|   -0.057(R)|Clock_BUFGP       |   0.000|
+IorM        |    5.098(R)|   -1.051(R)|Clock_BUFGP       |   0.000|
+ItypeSel    |    5.780(R)|   -2.174(R)|Clock_BUFGP       |   0.000|
+MemWrite    |    1.676(R)|    0.050(R)|Clock_BUFGP       |   0.000|
+Mwrite      |    2.135(R)|    0.589(R)|Clock_BUFGP       |   0.000|
+PCwrite     |    2.696(R)|    0.391(R)|Clock_BUFGP       |   0.000|
+RegWrite    |    7.499(R)|   -0.220(R)|Clock_BUFGP       |   0.000|
+destAddr<0> |    8.490(R)|   -0.140(R)|Clock_BUFGP       |   0.000|
+destAddr<1> |    8.689(R)|   -0.451(R)|Clock_BUFGP       |   0.000|
+destData<0> |    9.184(R)|    0.712(R)|Clock_BUFGP       |   0.000|
+destData<1> |    7.336(R)|    0.558(R)|Clock_BUFGP       |   0.000|
+destData<2> |    8.021(R)|    0.875(R)|Clock_BUFGP       |   0.000|
+isZeroWrite |    4.678(R)|   -0.816(R)|Clock_BUFGP       |   0.000|
+jControl<0> |    2.609(R)|    0.004(R)|Clock_BUFGP       |   0.000|
+jControl<1> |    2.180(R)|    0.303(R)|Clock_BUFGP       |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock Clock to Pad
+----------------+------------+------------------+--------+
+                | clk (edge) |                  | Clock  |
+Destination     |   to PAD   |Internal Clock(s) | Phase  |
+----------------+------------+------------------+--------+
+A<0>            |    9.826(R)|Clock_BUFGP       |   0.000|
+A<1>            |   10.733(R)|Clock_BUFGP       |   0.000|
+A<2>            |    9.391(R)|Clock_BUFGP       |   0.000|
+A<3>            |    9.997(R)|Clock_BUFGP       |   0.000|
+A<4>            |   10.105(R)|Clock_BUFGP       |   0.000|
+A<5>            |   10.505(R)|Clock_BUFGP       |   0.000|
+A<6>            |   10.253(R)|Clock_BUFGP       |   0.000|
+A<7>            |   10.206(R)|Clock_BUFGP       |   0.000|
+A<8>            |   11.174(R)|Clock_BUFGP       |   0.000|
+A<9>            |    9.912(R)|Clock_BUFGP       |   0.000|
+A<10>           |    9.877(R)|Clock_BUFGP       |   0.000|
+A<11>           |    9.720(R)|Clock_BUFGP       |   0.000|
+A<12>           |   11.332(R)|Clock_BUFGP       |   0.000|
+A<13>           |   10.051(R)|Clock_BUFGP       |   0.000|
+A<14>           |   11.416(R)|Clock_BUFGP       |   0.000|
+A<15>           |   10.240(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<0> |    8.804(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<1> |    8.585(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<2> |    8.425(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<3> |    8.366(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<4> |    8.528(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<5> |    8.576(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<6> |    8.528(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<7> |    7.916(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<8> |    8.638(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<9> |    8.606(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<10>|    8.439(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<11>|    9.202(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<12>|    8.231(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<13>|    8.490(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<14>|    8.226(R)|Clock_BUFGP       |   0.000|
+ALUOut_ouput<15>|    8.299(R)|Clock_BUFGP       |   0.000|
+B<0>            |   10.555(R)|Clock_BUFGP       |   0.000|
+B<1>            |   10.137(R)|Clock_BUFGP       |   0.000|
+B<2>            |    9.992(R)|Clock_BUFGP       |   0.000|
+B<3>            |    9.320(R)|Clock_BUFGP       |   0.000|
+B<4>            |   10.535(R)|Clock_BUFGP       |   0.000|
+B<5>            |   10.434(R)|Clock_BUFGP       |   0.000|
+B<6>            |    9.774(R)|Clock_BUFGP       |   0.000|
+B<7>            |    9.867(R)|Clock_BUFGP       |   0.000|
+B<8>            |    9.900(R)|Clock_BUFGP       |   0.000|
+B<9>            |    8.814(R)|Clock_BUFGP       |   0.000|
+B<10>           |    9.434(R)|Clock_BUFGP       |   0.000|
+B<11>           |    8.581(R)|Clock_BUFGP       |   0.000|
+B<12>           |   10.464(R)|Clock_BUFGP       |   0.000|
+B<13>           |   10.363(R)|Clock_BUFGP       |   0.000|
+B<14>           |    8.871(R)|Clock_BUFGP       |   0.000|
+B<15>           |    9.687(R)|Clock_BUFGP       |   0.000|
+IR<0>           |   10.440(R)|Clock_BUFGP       |   0.000|
+IR<1>           |    8.418(R)|Clock_BUFGP       |   0.000|
+IR<2>           |    8.653(R)|Clock_BUFGP       |   0.000|
+IR<3>           |    8.355(R)|Clock_BUFGP       |   0.000|
+IR<4>           |    7.829(R)|Clock_BUFGP       |   0.000|
+IR<5>           |    8.387(R)|Clock_BUFGP       |   0.000|
+IR<6>           |    7.892(R)|Clock_BUFGP       |   0.000|
+IR<7>           |    9.920(R)|Clock_BUFGP       |   0.000|
+IR<8>           |   10.786(R)|Clock_BUFGP       |   0.000|
+IR<9>           |   10.945(R)|Clock_BUFGP       |   0.000|
+IR<10>          |   10.609(R)|Clock_BUFGP       |   0.000|
+IR<11>          |   11.055(R)|Clock_BUFGP       |   0.000|
+IR<12>          |    7.477(R)|Clock_BUFGP       |   0.000|
+IR<13>          |    7.748(R)|Clock_BUFGP       |   0.000|
+IR<14>          |    7.475(R)|Clock_BUFGP       |   0.000|
+IR<15>          |    7.422(R)|Clock_BUFGP       |   0.000|
+PCData<0>       |   11.471(R)|Clock_BUFGP       |   0.000|
+PCData<1>       |   12.311(R)|Clock_BUFGP       |   0.000|
+PCData<2>       |   13.442(R)|Clock_BUFGP       |   0.000|
+PCData<3>       |   12.798(R)|Clock_BUFGP       |   0.000|
+PCData<4>       |   12.590(R)|Clock_BUFGP       |   0.000|
+PCData<5>       |   13.015(R)|Clock_BUFGP       |   0.000|
+PCData<6>       |   12.584(R)|Clock_BUFGP       |   0.000|
+PCData<7>       |   13.003(R)|Clock_BUFGP       |   0.000|
+PCData<8>       |   11.975(R)|Clock_BUFGP       |   0.000|
+PCData<9>       |   13.228(R)|Clock_BUFGP       |   0.000|
+PCData<10>      |   13.975(R)|Clock_BUFGP       |   0.000|
+PCData<11>      |   13.915(R)|Clock_BUFGP       |   0.000|
+PCData<12>      |   13.023(R)|Clock_BUFGP       |   0.000|
+PCData<13>      |   13.939(R)|Clock_BUFGP       |   0.000|
+PCData<14>      |   13.461(R)|Clock_BUFGP       |   0.000|
+PCData<15>      |   13.969(R)|Clock_BUFGP       |   0.000|
+PC_Out<0>       |    9.113(R)|Clock_BUFGP       |   0.000|
+PC_Out<1>       |    9.509(R)|Clock_BUFGP       |   0.000|
+PC_Out<2>       |    9.840(R)|Clock_BUFGP       |   0.000|
+PC_Out<3>       |    8.884(R)|Clock_BUFGP       |   0.000|
+PC_Out<4>       |    9.514(R)|Clock_BUFGP       |   0.000|
+PC_Out<5>       |    9.992(R)|Clock_BUFGP       |   0.000|
+PC_Out<6>       |    8.711(R)|Clock_BUFGP       |   0.000|
+PC_Out<7>       |    9.597(R)|Clock_BUFGP       |   0.000|
+PC_Out<8>       |    8.884(R)|Clock_BUFGP       |   0.000|
+PC_Out<9>       |    8.825(R)|Clock_BUFGP       |   0.000|
+PC_Out<10>      |    8.503(R)|Clock_BUFGP       |   0.000|
+PC_Out<11>      |    8.302(R)|Clock_BUFGP       |   0.000|
+PC_Out<12>      |    9.022(R)|Clock_BUFGP       |   0.000|
+PC_Out<13>      |    8.644(R)|Clock_BUFGP       |   0.000|
+PC_Out<14>      |    9.231(R)|Clock_BUFGP       |   0.000|
+PC_Out<15>      |    9.244(R)|Clock_BUFGP       |   0.000|
+isZero          |   19.001(R)|Clock_BUFGP       |   0.000|
+overflow_out    |   16.386(R)|Clock_BUFGP       |   0.000|
+----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |   11.498|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ALUctrl<0>     |isZero         |   20.941|
+ALUctrl<0>     |overflow_out   |   18.298|
+ALUctrl<1>     |isZero         |   20.768|
+ALUctrl<1>     |overflow_out   |   18.125|
+ALUctrl<2>     |isZero         |   20.256|
+ALUctrl<2>     |overflow_out   |   17.613|
+ItypeSel       |PCData<12>     |   11.226|
+ItypeSel       |PCData<13>     |   12.316|
+ItypeSel       |PCData<14>     |   12.110|
+ItypeSel       |PCData<15>     |   12.618|
+jControl<0>    |PCData<0>      |    8.509|
+jControl<0>    |PCData<1>      |    9.160|
+jControl<0>    |PCData<2>      |    9.537|
+jControl<0>    |PCData<3>      |    8.208|
+jControl<0>    |PCData<4>      |    9.331|
+jControl<0>    |PCData<5>      |    9.601|
+jControl<0>    |PCData<6>      |    9.170|
+jControl<0>    |PCData<7>      |    8.984|
+jControl<0>    |PCData<8>      |    8.347|
+jControl<0>    |PCData<9>      |    9.350|
+jControl<0>    |PCData<10>     |    9.348|
+jControl<0>    |PCData<11>     |    9.600|
+jControl<0>    |PCData<12>     |    8.993|
+jControl<0>    |PCData<13>     |    9.085|
+jControl<0>    |PCData<14>     |    8.820|
+jControl<0>    |PCData<15>     |    8.945|
+jControl<1>    |PCData<0>      |    8.322|
+jControl<1>    |PCData<1>      |    8.630|
+jControl<1>    |PCData<2>      |   10.130|
+jControl<1>    |PCData<3>      |    8.801|
+jControl<1>    |PCData<4>      |    8.268|
+jControl<1>    |PCData<5>      |    8.543|
+jControl<1>    |PCData<6>      |    8.112|
+jControl<1>    |PCData<7>      |    8.252|
+jControl<1>    |PCData<8>      |    8.043|
+jControl<1>    |PCData<9>      |    8.618|
+jControl<1>    |PCData<10>     |    9.044|
+jControl<1>    |PCData<11>     |    8.873|
+jControl<1>    |PCData<12>     |    8.395|
+jControl<1>    |PCData<13>     |    8.487|
+jControl<1>    |PCData<14>     |    8.595|
+jControl<1>    |PCData<15>     |    8.720|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Oct 31 20:03:03 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 173 MB
+
+
+

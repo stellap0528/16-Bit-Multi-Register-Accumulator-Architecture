@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/FPPPP/Processor_Project/Reg_File_test_0_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Reg_File_test_0" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/Reg_File_test_0/acc_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acc_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reg_File_test_0/read_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reg_File_test_0/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reg_File_test_0/ra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ra[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reg_File_test_0/wa" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wa[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wa[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reg_File_test_0/write_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reg_File_test_0/iszero_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">iszero_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">iszero_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reg_File_test_0/reg_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_write</obj_property>
+      <obj_property name="ObjectShortName">reg_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reg_File_test_0/iszero_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">iszero_write</obj_property>
+      <obj_property name="ObjectShortName">iszero_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reg_File_test_0/out_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reg_File_test_0/uut/RF" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RF[15:0,15:0]</obj_property>
+      <obj_property name="ObjectShortName">RF[15:0,15:0]</obj_property>
+   </wvobject>
+</wave_config>

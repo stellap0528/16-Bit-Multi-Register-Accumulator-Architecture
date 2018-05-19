@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/Mux_16bit_4i_1o.xst" -ofn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/Mux_16bit_4i_1o.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Mux_16bit_4i_1o.ngc" Mux_16bit_4i_1o.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Mux_16bit_4i_1o_map.ncd Mux_16bit_4i_1o.ngd Mux_16bit_4i_1o.pcf 
+par -w -intstyle ise -ol high -t 1 Mux_16bit_4i_1o_map.ncd Mux_16bit_4i_1o.ncd Mux_16bit_4i_1o.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Mux_16bit_4i_1o.twx Mux_16bit_4i_1o.ncd -o Mux_16bit_4i_1o.twr Mux_16bit_4i_1o.pcf 
+vhdtdtfi -lib work C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/CompArch_Project_Xilinx_project/Mux_16bit_4i_1o.v -lang verilog -prj CompArch_Project_Xilinx_project -o Mux_16bit_4i_1o.spl -module Mux_16bit_4i_1o -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Mux_16bit_4i_1o.spl C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/CompArch_Project_Xilinx_project/Mux_16bit_4i_1o.sym 

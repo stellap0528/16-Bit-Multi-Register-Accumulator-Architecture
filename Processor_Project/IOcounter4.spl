@@ -1,0 +1,11 @@
+[Inputs]
+clk
+ce
+up
+sclr
+[Outputs]
+=q[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel IOcounter4
+

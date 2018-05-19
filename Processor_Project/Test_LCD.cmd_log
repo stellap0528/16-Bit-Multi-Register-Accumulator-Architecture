@@ -1,0 +1,4 @@
+vhdtdtfi -lib work {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final SVN/Processor_Project/test_lcd.v} -lang verilog -prj Processor_Project -o Test_LCD.spl -module Test_LCD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Test_LCD.spl {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final SVN/Processor_Project/Test_LCD.sym} 
+vhdtdtfi -lib work {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/test_lcd.v} -lang verilog -prj Processor_Project -o Test_LCD.spl -module Test_LCD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Test_LCD.spl {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Test_LCD.sym} 

@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Processor_Integration_3.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Processor_Integration_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 "Processor_Integration_3.ngc" Processor_Integration_3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_Integration_3_map.ncd Processor_Integration_3.ngd Processor_Integration_3.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_Integration_3_map.ncd Processor_Integration_3.ncd Processor_Integration_3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor_Integration_3.twx Processor_Integration_3.ncd -o Processor_Integration_3.twr Processor_Integration_3.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Processor_Integration_3.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Processor_Integration_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 "Processor_Integration_3.ngc" Processor_Integration_3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_Integration_3_map.ncd Processor_Integration_3.ngd Processor_Integration_3.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_Integration_3_map.ncd Processor_Integration_3.ncd Processor_Integration_3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor_Integration_3.twx Processor_Integration_3.ncd -o Processor_Integration_3.twr Processor_Integration_3.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Processor_Integration_3.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Processor_Integration_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 "Processor_Integration_3.ngc" Processor_Integration_3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_Integration_3_map.ncd Processor_Integration_3.ngd Processor_Integration_3.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_Integration_3_map.ncd Processor_Integration_3.ncd Processor_Integration_3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor_Integration_3.twx Processor_Integration_3.ncd -o Processor_Integration_3.twr Processor_Integration_3.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Processor_Integration_3.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Processor_Integration_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 "Processor_Integration_3.ngc" Processor_Integration_3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_Integration_3_map.ncd Processor_Integration_3.ngd Processor_Integration_3.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_Integration_3_map.ncd Processor_Integration_3.ncd Processor_Integration_3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor_Integration_3.twx Processor_Integration_3.ncd -o Processor_Integration_3.twr Processor_Integration_3.pcf 

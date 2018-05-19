@@ -1,0 +1,198 @@
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Current SVN/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Current SVN/IO_Processor.syr" 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Current SVN/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Current SVN/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Current SVN/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Current SVN/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Current SVN/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Current SVN/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.xst" -ofn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.syr" 
+xst -intstyle ise -ifn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.xst" -ofn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+xst -intstyle ise -ifn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.xst" -ofn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.syr" 
+xst -intstyle ise -ifn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.xst" -ofn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.syr" 
+xst -intstyle ise -ifn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.xst" -ofn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.xst" -ofn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.xst" -ofn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.xst" -ofn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.xst" -ofn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+xst -intstyle ise -ifn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.xst" -ofn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.xst" -ofn "C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/IO_Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc IO_Processor.ucf -p xc3s500e-fg320-4 "IO_Processor.ngc" IO_Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o IO_Processor_map.ncd IO_Processor.ngd IO_Processor.pcf 
+par -w -intstyle ise -ol high -t 1 IO_Processor_map.ncd IO_Processor.ncd IO_Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IO_Processor.twx IO_Processor.ncd -o IO_Processor.twr IO_Processor.pcf -ucf IO_Processor.ucf 
+bitgen -intstyle ise -f IO_Processor.ut IO_Processor.ncd 

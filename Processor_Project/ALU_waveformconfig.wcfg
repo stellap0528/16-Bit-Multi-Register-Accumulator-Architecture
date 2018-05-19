@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/ALU_16bit_test_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="ALU_16bit_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/ALU_16bit_test/ALUOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOut[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_16bit_test/iszero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">iszero</obj_property>
+      <obj_property name="ObjectShortName">iszero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_16bit_test/Overflow" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Overflow</obj_property>
+      <obj_property name="ObjectShortName">Overflow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_16bit_test/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">a[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_16bit_test/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_16bit_test/ALUctrl" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUctrl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUctrl[2:0]</obj_property>
+   </wvobject>
+</wave_config>

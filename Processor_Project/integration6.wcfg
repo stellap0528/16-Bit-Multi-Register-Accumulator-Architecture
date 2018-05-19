@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Processor_Integration_7_Processor_Integration_7_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Processor_Integration_7_Processor_Integration_7_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+<<<<<<< .mine
+   <WVObjectSize size="29" />
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/Clock" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Clock</obj_property>
+      <obj_property name="ObjectShortName">Clock</obj_property>
+      <obj_property name="label">Clock</obj_property>
+=======
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/Clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Clock</obj_property>
+      <obj_property name="ObjectShortName">Clock</obj_property>
+>>>>>>> .r59
+   </wvobject>
+<<<<<<< .mine
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/UUT/XLXI_98/Clock2x" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Clock2x</obj_property>
+      <obj_property name="ObjectShortName">Clock2x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/PC_Out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_Out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_Out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+=======
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/Reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+>>>>>>> .r59
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/ALU_Out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALU_Out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_Out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+<<<<<<< .mine
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/IR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/IRwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IRwrite</obj_property>
+      <obj_property name="ObjectShortName">IRwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/PCData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCData[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCData[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/MemWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/IorM" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IorM</obj_property>
+      <obj_property name="ObjectShortName">IorM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/M_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">M_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">M_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/Mwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Mwrite</obj_property>
+      <obj_property name="ObjectShortName">Mwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/destAddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">destAddr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">destAddr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/destData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">destData[2:0]</obj_property>
+      <obj_property name="ObjectShortName">destData[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/A" type="array" db_ref_id="1">
+=======
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/A" type="array" db_ref_id="1">
+>>>>>>> .r59
+      <obj_property name="ElementShortName">A[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/IR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/UUT/XLXI_1/acc_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acc_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/UUT/XLXI_7/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/UUT/XLXI_7/r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/UUT/XLXI_9/CE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CE</obj_property>
+      <obj_property name="ObjectShortName">CE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/UUT/XLXI_9/Q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_7_Processor_Integration_7_sch_tb/UUT/XLXI_56/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b[15:0]</obj_property>
+   </wvobject>
+<<<<<<< .mine
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/isZeroWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">isZeroWrite</obj_property>
+      <obj_property name="ObjectShortName">isZeroWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/ItypeSel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ItypeSel</obj_property>
+      <obj_property name="ObjectShortName">ItypeSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/Bsel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Bsel</obj_property>
+      <obj_property name="ObjectShortName">Bsel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/Asel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Asel</obj_property>
+      <obj_property name="ObjectShortName">Asel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/Bwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Bwrite</obj_property>
+      <obj_property name="ObjectShortName">Bwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/Awrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Awrite</obj_property>
+      <obj_property name="ObjectShortName">Awrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/ALUwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUwrite</obj_property>
+      <obj_property name="ObjectShortName">ALUwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Integration_6_Processor_Integration_6_sch_tb/PCwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PCwrite</obj_property>
+      <obj_property name="ObjectShortName">PCwrite</obj_property>
+   </wvobject>
+=======
+>>>>>>> .r59
+</wave_config>

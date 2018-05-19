@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\johnsor2\Documents\College\Junior\Q1\Comp Arch I\SVN Output\Processor_Project\IO_Processor.ncd
+OUTFILE=C:\Users\johnsor2\Documents\College\Junior\Q1\Comp Arch I\SVN Output\Processor_Project\IO_Processor.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\johnsor2\Documents\College\Junior\Q1\Comp Arch I\SVN Output\Processor_Project
+LICENSE=ISE
+USER_INFO=174114502_1777496879_210571720_868

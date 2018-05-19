@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Mux_16bit_6i_1o.v} -lang verilog -prj Processor_Project -o Mux_16bit_6i_1o.spl -module Mux_16bit_6i_1o -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Mux_16bit_6i_1o.spl {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Mux_16bit_6i_1o.sym} 

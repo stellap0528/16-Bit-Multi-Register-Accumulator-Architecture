@@ -1,0 +1,8 @@
+[Inputs]
+=a[11:0]=
+[Outputs]
+=r[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel ZeroExtend_12bit
+

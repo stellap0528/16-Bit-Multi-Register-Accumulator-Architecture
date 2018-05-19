@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Nov 11 15:14:49 2017
+# Process ID: 4304
+# Log file: C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/planAhead_run_5/planAhead.log
+# Journal file: C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin V4 [get_ports a_button]
+endgroup
+set_property iostandard LVTTL [get_ports [list a_button]]
+startgroup
+set_property package_pin K18 [get_ports a_button]
+endgroup
+set_property pulltype PULLUP [get_ports [list a_button]]
+startgroup
+set_property package_pin G18 [get_ports b_button]
+endgroup
+set_property iostandard LVTTL [get_ports [list b_button]]
+set_property pulltype PULLUP [get_ports [list b_button]]
+startgroup
+set_property package_pin V16 [get_ports Rot_btn]
+endgroup
+set_property iostandard LVTTL [get_ports [list Rot_btn]]
+set_property pulltype PULLDOWN [get_ports [list Rot_btn]]
+startgroup
+set_property package_pin F12 [get_ports led0]
+endgroup
+set_property iostandard LVTTL [get_ports [list led0]]
+set_property drive 4 [get_ports [list led0]]
+set_property slew FAST [get_ports [list led0]]
+startgroup
+set_property package_pin L13 [get_ports switch1]
+endgroup
+set_property iostandard LVTTL [get_ports [list switch1]]
+set_property pulltype PULLUP [get_ports [list switch1]]
+save_constraints

@@ -1,0 +1,3 @@
+verilog isim_temp "LeftShift_4.v"
+verilog isim_temp "LeftShift_4_test.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

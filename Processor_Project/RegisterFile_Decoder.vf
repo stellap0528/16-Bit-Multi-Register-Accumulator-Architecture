@@ -1,0 +1,154 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : RegisterFile_Decoder.vf
+// /___/   /\     Timestamp : 10/23/2017 09:01:25
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory" -intstyle ise -family spartan3e -verilog "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/RegisterFile_Decoder.vf" -w C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/CompArch_Project_Xilinx_project/RegisterFile_Decoder.sch
+//Design Name: RegisterFile_Decoder
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module RegisterFile_Decoder(REG_WRITE, 
+                            WRITE_ADDR, 
+                            R0, 
+                            R1, 
+                            R2, 
+                            R3, 
+                            R4, 
+                            R5, 
+                            R6, 
+                            R7, 
+                            R8, 
+                            R9, 
+                            R10, 
+                            R11, 
+                            R12, 
+                            R13);
+
+    input REG_WRITE;
+    input [3:0] WRITE_ADDR;
+   output R0;
+   output R1;
+   output R2;
+   output R3;
+   output R4;
+   output R5;
+   output R6;
+   output R7;
+   output R8;
+   output R9;
+   output R10;
+   output R11;
+   output R12;
+   output R13;
+   
+   wire nWRITE_ADDR0;
+   wire nWRITE_ADDR1;
+   wire nWRITE_ADDR2;
+   wire nWRITE_ADDR3;
+   
+   INV  XLXI_1 (.I(WRITE_ADDR[0]), 
+               .O(nWRITE_ADDR0));
+   INV  XLXI_2 (.I(WRITE_ADDR[1]), 
+               .O(nWRITE_ADDR1));
+   INV  XLXI_3 (.I(WRITE_ADDR[2]), 
+               .O(nWRITE_ADDR2));
+   INV  XLXI_4 (.I(WRITE_ADDR[3]), 
+               .O(nWRITE_ADDR3));
+   AND5  XLXI_5 (.I0(REG_WRITE), 
+                .I1(WRITE_ADDR[3]), 
+                .I2(nWRITE_ADDR2), 
+                .I3(nWRITE_ADDR1), 
+                .I4(nWRITE_ADDR0), 
+                .O(R0));
+   AND5  XLXI_12 (.I0(REG_WRITE), 
+                 .I1(nWRITE_ADDR3), 
+                 .I2(WRITE_ADDR[2]), 
+                 .I3(nWRITE_ADDR1), 
+                 .I4(nWRITE_ADDR0), 
+                 .O(R1));
+   AND5  XLXI_13 (.I0(REG_WRITE), 
+                 .I1(nWRITE_ADDR3), 
+                 .I2(nWRITE_ADDR2), 
+                 .I3(WRITE_ADDR[1]), 
+                 .I4(nWRITE_ADDR0), 
+                 .O(R2));
+   AND5  XLXI_14 (.I0(REG_WRITE), 
+                 .I1(WRITE_ADDR[3]), 
+                 .I2(nWRITE_ADDR2), 
+                 .I3(WRITE_ADDR[1]), 
+                 .I4(nWRITE_ADDR0), 
+                 .O(R3));
+   AND5  XLXI_16 (.I0(REG_WRITE), 
+                 .I1(nWRITE_ADDR3), 
+                 .I2(WRITE_ADDR[2]), 
+                 .I3(WRITE_ADDR[1]), 
+                 .I4(nWRITE_ADDR0), 
+                 .O(R4));
+   AND5  XLXI_17 (.I0(REG_WRITE), 
+                 .I1(WRITE_ADDR[3]), 
+                 .I2(WRITE_ADDR[2]), 
+                 .I3(WRITE_ADDR[1]), 
+                 .I4(WRITE_ADDR[0]), 
+                 .O(R5));
+   AND5  XLXI_19 (.I0(REG_WRITE), 
+                 .I1(nWRITE_ADDR3), 
+                 .I2(nWRITE_ADDR2), 
+                 .I3(nWRITE_ADDR1), 
+                 .I4(WRITE_ADDR[0]), 
+                 .O(R6));
+   AND5  XLXI_20 (.I0(REG_WRITE), 
+                 .I1(WRITE_ADDR[3]), 
+                 .I2(nWRITE_ADDR2), 
+                 .I3(nWRITE_ADDR1), 
+                 .I4(WRITE_ADDR[0]), 
+                 .O(R7));
+   AND5  XLXI_21 (.I0(REG_WRITE), 
+                 .I1(nWRITE_ADDR3), 
+                 .I2(WRITE_ADDR[2]), 
+                 .I3(nWRITE_ADDR1), 
+                 .I4(WRITE_ADDR[0]), 
+                 .O(R8));
+   AND5  XLXI_22 (.I0(REG_WRITE), 
+                 .I1(WRITE_ADDR[3]), 
+                 .I2(WRITE_ADDR[2]), 
+                 .I3(nWRITE_ADDR1), 
+                 .I4(WRITE_ADDR[0]), 
+                 .O(R9));
+   AND5  XLXI_23 (.I0(REG_WRITE), 
+                 .I1(nWRITE_ADDR3), 
+                 .I2(nWRITE_ADDR2), 
+                 .I3(WRITE_ADDR[1]), 
+                 .I4(WRITE_ADDR[0]), 
+                 .O(R10));
+   AND5  XLXI_24 (.I0(REG_WRITE), 
+                 .I1(WRITE_ADDR[3]), 
+                 .I2(nWRITE_ADDR2), 
+                 .I3(WRITE_ADDR[1]), 
+                 .I4(WRITE_ADDR[0]), 
+                 .O(R11));
+   AND5  XLXI_25 (.I0(REG_WRITE), 
+                 .I1(nWRITE_ADDR3), 
+                 .I2(WRITE_ADDR[2]), 
+                 .I3(WRITE_ADDR[1]), 
+                 .I4(WRITE_ADDR[0]), 
+                 .O(R12));
+   AND5  XLXI_26 (.I0(REG_WRITE), 
+                 .I1(WRITE_ADDR[3]), 
+                 .I2(WRITE_ADDR[2]), 
+                 .I3(WRITE_ADDR[1]), 
+                 .I4(WRITE_ADDR[0]), 
+                 .O(R13));
+endmodule

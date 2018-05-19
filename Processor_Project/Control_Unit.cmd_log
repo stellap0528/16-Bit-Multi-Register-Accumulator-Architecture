@@ -1,0 +1,8 @@
+vhdtdtfi -lib work {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Control_Unit.v} -lang verilog -prj Processor_Project -o Control_Unit.spl -module Control_Unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Control_Unit.spl {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Control_Unit.sym} 
+vhdtdtfi -lib work {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Control_Unit.v} -lang verilog -prj Processor_Project -o Control_Unit.spl -module Control_Unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Control_Unit.spl {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Control_Unit.sym} 
+vhdtdtfi -lib work {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/FPPPP/Processor_Project/Control_Unit.v} -lang verilog -prj Processor_Project -o Control_Unit.spl -module Control_Unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Control_Unit.spl {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/FPPPP/Processor_Project/Control_Unit.sym} 
+vhdtdtfi -lib work C:/Users/steffygm/Desktop/Processor_Project/Control_Unit.v -lang verilog -prj Processor_Project -o Control_Unit.spl -module Control_Unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Control_Unit.spl C:/Users/steffygm/Desktop/Processor_Project/Control_Unit.sym 

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/LeftShift_4.v} -lang verilog -prj Processor_Project -o LeftShift_4.spl -module LeftShift_4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w LeftShift_4.spl {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/LeftShift_4.sym} 

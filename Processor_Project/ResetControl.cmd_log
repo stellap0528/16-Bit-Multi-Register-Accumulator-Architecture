@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/ResetControl.v} -lang verilog -prj Processor_Project -o ResetControl.spl -module ResetControl -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ResetControl.spl {C:/Users/beemanca/Documents/Rose-Hulman/Fall 2017/Comp Arch/Comparch Project/Repo/Processor_Project/ResetControl.sym} 

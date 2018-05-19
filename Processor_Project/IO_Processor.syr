@@ -1,0 +1,1299 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: IO_Processor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "IO_Processor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "IO_Processor"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : IO_Processor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ZeroExtend_4bit.v" in library work
+Compiling verilog file "ZeroExtend_12bit.v" in library work
+Module <ZeroExtend_4bit> compiled
+Compiling verilog file "SignExtend_8bit.v" in library work
+Module <ZeroExtend_12bit> compiled
+Compiling verilog file "SignExtend_1bit.v" in library work
+Module <SignExtend_8bit> compiled
+Compiling verilog file "SignExtend_12bit.v" in library work
+Module <SignExtend_1Bit> compiled
+Compiling verilog file "shift4.vf" in library work
+Module <SignExtend_12bit> compiled
+Module <M2_1_MXILINX_shift4> compiled
+Compiling verilog file "Reg_File.v" in library work
+Module <shift4> compiled
+Compiling verilog file "Mux_4bit_3i_1o.v" in library work
+Module <Reg_File> compiled
+Compiling verilog file "Mux_16bit_6i_1o.v" in library work
+Module <Mux_4bit_3i_1o> compiled
+Compiling verilog file "Mux_16bit_4i_1o.v" in library work
+Module <Mux_16bit_6i_1o> compiled
+Compiling verilog file "Mux_16bit_3i_1o.v" in library work
+Module <Mux_16bit_4i_1o> compiled
+Compiling verilog file "Mux_16bit_2i_1o.v" in library work
+Module <Mux_16bit_3i_1o> compiled
+Compiling verilog file "LeftShift_4.v" in library work
+Module <Mux_16bit_2i_1o> compiled
+Compiling verilog file "ipcore_dir/IOcounter4.v" in library work
+Module <LeftShift_4> compiled
+Compiling verilog file "ipcore_dir/dualportMem.v" in library work
+Module <IOcounter4> compiled
+Compiling verilog file "ipcore_dir/debounce_counter.v" in library work
+Module <dualportMem> compiled
+Compiling verilog file "Control_Unit.v" in library work
+Module <debounce_counter> compiled
+Compiling verilog file "check_noOp.v" in library work
+Module <Control_Unit> compiled
+Compiling verilog file "Append_Buffer.vf" in library work
+Module <check_noOp> compiled
+Compiling verilog file "ALU_16bit.v" in library work
+Module <Append_Buffer> compiled
+Compiling verilog file "Adder_16.v" in library work
+Module <ALU_16bit> compiled
+Compiling verilog file "test_lcd.v" in library work
+Module <Adder_16> compiled
+Compiling verilog file "RotaryInputControl.vf" in library work
+Module <Test_LCD> compiled
+Module <M2_1_MXILINX_RotaryInputControl> compiled
+Module <shift4_MUSER_RotaryInputControl> compiled
+Compiling verilog file "LCD_Decoder.v" in library work
+Module <RotaryInputControl> compiled
+Compiling verilog file "Final_Processor.vf" in library work
+Module <LCD_Decoder> compiled
+Module <Append_Buffer_MUSER_Final_Processor> compiled
+Module <FD16RE_MXILINX_Final_Processor> compiled
+Compiling verilog file "debounceRotary.vf" in library work
+Module <Final_Processor> compiled
+Compiling verilog file "debouncer.vf" in library work
+Module <debounceRotary> compiled
+Compiling verilog file "IO_Processor.vf" in library work
+Module <debouncer> compiled
+Module <debouncer_MUSER_IO_Processor> compiled
+Module <M2_1_MXILINX_IO_Processor> compiled
+Module <shift4_MUSER_IO_Processor> compiled
+Module <RotaryInputControl_MUSER_IO_Processor> compiled
+Module <debounceRotary_MUSER_IO_Processor> compiled
+Module <Append_Buffer_MUSER_IO_Processor> compiled
+Module <FD16RE_MXILINX_IO_Processor> compiled
+Module <Final_Processor_MUSER_IO_Processor> compiled
+Module <IO_Processor> compiled
+No errors in compilation
+Analysis of file <"IO_Processor.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <Test_LCD> in library <work>.
+
+Analyzing hierarchy for module <LCD_Decoder> in library <work>.
+
+Analyzing hierarchy for module <Final_Processor_MUSER_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <debouncer_MUSER_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <debounceRotary_MUSER_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <RotaryInputControl_MUSER_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <ALU_16bit> in library <work>.
+
+Analyzing hierarchy for module <FD16RE_MXILINX_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <Control_Unit> in library <work>.
+
+Analyzing hierarchy for module <Mux_16bit_2i_1o> in library <work>.
+
+Analyzing hierarchy for module <FD16RE_MXILINX_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <ZeroExtend_12bit> in library <work>.
+
+Analyzing hierarchy for module <FD16RE_MXILINX_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <FD16RE_MXILINX_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <SignExtend_12bit> in library <work>.
+
+Analyzing hierarchy for module <SignExtend_8bit> in library <work>.
+
+Analyzing hierarchy for module <FD16RE_MXILINX_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <LeftShift_4> in library <work>.
+
+Analyzing hierarchy for module <ZeroExtend_4bit> in library <work>.
+
+Analyzing hierarchy for module <FD16RE_MXILINX_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <Mux_16bit_4i_1o> in library <work>.
+
+Analyzing hierarchy for module <Mux_4bit_3i_1o> in library <work>.
+
+Analyzing hierarchy for module <Adder_16> in library <work>.
+
+Analyzing hierarchy for module <Append_Buffer_MUSER_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <Mux_16bit_6i_1o> in library <work>.
+
+Analyzing hierarchy for module <check_noOp> in library <work>.
+
+Analyzing hierarchy for module <Reg_File> in library <work>.
+
+Analyzing hierarchy for module <Mux_16bit_3i_1o> in library <work>.
+
+Analyzing hierarchy for module <SignExtend_1Bit> in library <work>.
+
+Analyzing hierarchy for module <shift4_MUSER_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_IO_Processor> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_IO_Processor> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <IO_Processor>.
+Module <IO_Processor> is correct for synthesis.
+ 
+Analyzing module <Test_LCD> in library <work>.
+Module <Test_LCD> is correct for synthesis.
+ 
+Analyzing module <LCD_Decoder> in library <work>.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 33: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 34: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 35: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 36: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 37: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 38: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 39: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 40: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 41: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 42: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 43: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 44: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 45: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 46: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 47: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 48: Signal ascii in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 49: Signal bytes in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 50: Signal bytes in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 51: Signal bytes in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 52: Signal bytes in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 53: Signal bytes in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 54: Signal bytes in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 55: Signal bytes in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "LCD_Decoder.v" line 56: Signal bytes in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:905 - "LCD_Decoder.v" line 58: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <data_in>
+Module <LCD_Decoder> is correct for synthesis.
+ 
+Analyzing module <Final_Processor_MUSER_IO_Processor> in library <work>.
+WARNING:Xst:2211 - "ipcore_dir/dualportMem.v" line 689: Instantiating black box module <dualportMem>.
+Module <Final_Processor_MUSER_IO_Processor> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  B_Reg_32" for instance <B_Reg> in unit <Final_Processor_MUSER_IO_Processor>.
+    Set user-defined property "HU_SET =  PC_Reg_37" for instance <PC_Reg> in unit <Final_Processor_MUSER_IO_Processor>.
+    Set user-defined property "HU_SET =  XLXI_10_33" for instance <XLXI_10> in unit <Final_Processor_MUSER_IO_Processor>.
+    Set user-defined property "HU_SET =  XLXI_13_34" for instance <XLXI_13> in unit <Final_Processor_MUSER_IO_Processor>.
+    Set user-defined property "HU_SET =  XLXI_58_36" for instance <XLXI_58> in unit <Final_Processor_MUSER_IO_Processor>.
+    Set user-defined property "HU_SET =  XLXI_65_35" for instance <XLXI_65> in unit <Final_Processor_MUSER_IO_Processor>.
+Analyzing module <ALU_16bit> in library <work>.
+Module <ALU_16bit> is correct for synthesis.
+ 
+Analyzing module <FD16RE_MXILINX_IO_Processor.1> in library <work>.
+Module <FD16RE_MXILINX_IO_Processor.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16RE_MXILINX_IO_Processor.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_IO_Processor.1>.
+Analyzing module <Control_Unit> in library <work>.
+Module <Control_Unit> is correct for synthesis.
+ 
+Analyzing module <Mux_16bit_2i_1o> in library <work>.
+Module <Mux_16bit_2i_1o> is correct for synthesis.
+ 
+Analyzing module <FD16RE_MXILINX_IO_Processor.2> in library <work>.
+Module <FD16RE_MXILINX_IO_Processor.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16RE_MXILINX_IO_Processor.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_IO_Processor.2>.
+Analyzing module <ZeroExtend_12bit> in library <work>.
+Module <ZeroExtend_12bit> is correct for synthesis.
+ 
+Analyzing module <FD16RE_MXILINX_IO_Processor.3> in library <work>.
+Module <FD16RE_MXILINX_IO_Processor.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16RE_MXILINX_IO_Processor.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_IO_Processor.3>.
+Analyzing module <FD16RE_MXILINX_IO_Processor.4> in library <work>.
+Module <FD16RE_MXILINX_IO_Processor.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16RE_MXILINX_IO_Processor.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_IO_Processor.4>.
+Analyzing module <SignExtend_12bit> in library <work>.
+Module <SignExtend_12bit> is correct for synthesis.
+ 
+Analyzing module <SignExtend_8bit> in library <work>.
+Module <SignExtend_8bit> is correct for synthesis.
+ 
+Analyzing module <FD16RE_MXILINX_IO_Processor.5> in library <work>.
+Module <FD16RE_MXILINX_IO_Processor.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16RE_MXILINX_IO_Processor.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_IO_Processor.5>.
+Analyzing module <LeftShift_4> in library <work>.
+Module <LeftShift_4> is correct for synthesis.
+ 
+Analyzing module <ZeroExtend_4bit> in library <work>.
+Module <ZeroExtend_4bit> is correct for synthesis.
+ 
+Analyzing module <FD16RE_MXILINX_IO_Processor.6> in library <work>.
+Module <FD16RE_MXILINX_IO_Processor.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16RE_MXILINX_IO_Processor.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_IO_Processor.6>.
+Analyzing module <Mux_16bit_4i_1o> in library <work>.
+Module <Mux_16bit_4i_1o> is correct for synthesis.
+ 
+Analyzing module <Mux_4bit_3i_1o> in library <work>.
+Module <Mux_4bit_3i_1o> is correct for synthesis.
+ 
+Analyzing module <Adder_16> in library <work>.
+Module <Adder_16> is correct for synthesis.
+ 
+Analyzing module <Append_Buffer_MUSER_IO_Processor> in library <work>.
+Module <Append_Buffer_MUSER_IO_Processor> is correct for synthesis.
+ 
+Analyzing module <Mux_16bit_6i_1o> in library <work>.
+Module <Mux_16bit_6i_1o> is correct for synthesis.
+ 
+Analyzing module <check_noOp> in library <work>.
+Module <check_noOp> is correct for synthesis.
+ 
+Analyzing module <Reg_File> in library <work>.
+WARNING:Xst:2319 - "Reg_File.v" line 37: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 38: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 39: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 40: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 41: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 42: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 43: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 44: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 45: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 46: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 47: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 48: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 49: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 50: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 51: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "Reg_File.v" line 52: Signal RF in initial block is partially initialized. The initialization will be ignored.
+Module <Reg_File> is correct for synthesis.
+ 
+Analyzing module <Mux_16bit_3i_1o> in library <work>.
+Module <Mux_16bit_3i_1o> is correct for synthesis.
+ 
+Analyzing module <SignExtend_1Bit> in library <work>.
+Module <SignExtend_1Bit> is correct for synthesis.
+ 
+Analyzing module <debouncer_MUSER_IO_Processor> in library <work>.
+WARNING:Xst:2211 - "ipcore_dir/debounce_counter.v" line 91: Instantiating black box module <debounce_counter>.
+Module <debouncer_MUSER_IO_Processor> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_22> in unit <debouncer_MUSER_IO_Processor>.
+    Set user-defined property "INIT =  0" for instance <XLXI_50> in unit <debouncer_MUSER_IO_Processor>.
+    Set user-defined property "INIT =  0" for instance <XLXI_80> in unit <debouncer_MUSER_IO_Processor>.
+    Set user-defined property "INIT =  0" for instance <XLXI_81> in unit <debouncer_MUSER_IO_Processor>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_85> in unit <debouncer_MUSER_IO_Processor>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_85> in unit <debouncer_MUSER_IO_Processor>.
+    Set property "SYN_NOPRUNE = 1" for unit <debounce_counter>.
+Analyzing module <debounceRotary_MUSER_IO_Processor> in library <work>.
+Module <debounceRotary_MUSER_IO_Processor> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_21> in unit <debounceRotary_MUSER_IO_Processor>.
+    Set user-defined property "INIT =  0" for instance <XLXI_22> in unit <debounceRotary_MUSER_IO_Processor>.
+    Set user-defined property "INIT =  0" for instance <XLXI_23> in unit <debounceRotary_MUSER_IO_Processor>.
+    Set user-defined property "INIT =  0" for instance <XLXI_25> in unit <debounceRotary_MUSER_IO_Processor>.
+    Set user-defined property "INIT =  0" for instance <XLXI_49> in unit <debounceRotary_MUSER_IO_Processor>.
+    Set user-defined property "INIT =  0" for instance <XLXI_70> in unit <debounceRotary_MUSER_IO_Processor>.
+Analyzing module <RotaryInputControl_MUSER_IO_Processor> in library <work>.
+WARNING:Xst:2211 - "ipcore_dir/IOcounter4.v" line 244: Instantiating black box module <IOcounter4>.
+WARNING:Xst:2211 - "ipcore_dir/IOcounter4.v" line 249: Instantiating black box module <IOcounter4>.
+WARNING:Xst:2211 - "ipcore_dir/IOcounter4.v" line 254: Instantiating black box module <IOcounter4>.
+WARNING:Xst:2211 - "ipcore_dir/IOcounter4.v" line 259: Instantiating black box module <IOcounter4>.
+Module <RotaryInputControl_MUSER_IO_Processor> is correct for synthesis.
+ 
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_17> in unit <RotaryInputControl_MUSER_IO_Processor>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_17> in unit <RotaryInputControl_MUSER_IO_Processor>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_18> in unit <RotaryInputControl_MUSER_IO_Processor>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_18> in unit <RotaryInputControl_MUSER_IO_Processor>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_19> in unit <RotaryInputControl_MUSER_IO_Processor>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_19> in unit <RotaryInputControl_MUSER_IO_Processor>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_22> in unit <RotaryInputControl_MUSER_IO_Processor>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_22> in unit <RotaryInputControl_MUSER_IO_Processor>.
+Analyzing module <shift4_MUSER_IO_Processor> in library <work>.
+Module <shift4_MUSER_IO_Processor> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_6> in unit <shift4_MUSER_IO_Processor>.
+    Set user-defined property "INIT =  0" for instance <XLXI_13> in unit <shift4_MUSER_IO_Processor>.
+    Set user-defined property "INIT =  0" for instance <XLXI_14> in unit <shift4_MUSER_IO_Processor>.
+    Set user-defined property "INIT =  0" for instance <XLXI_15> in unit <shift4_MUSER_IO_Processor>.
+    Set user-defined property "HU_SET =  XLXI_21_31" for instance <XLXI_21> in unit <shift4_MUSER_IO_Processor>.
+    Set user-defined property "HU_SET =  XLXI_56_28" for instance <XLXI_56> in unit <shift4_MUSER_IO_Processor>.
+    Set user-defined property "HU_SET =  XLXI_57_29" for instance <XLXI_57> in unit <shift4_MUSER_IO_Processor>.
+    Set user-defined property "HU_SET =  XLXI_58_30" for instance <XLXI_58> in unit <shift4_MUSER_IO_Processor>.
+Analyzing module <M2_1_MXILINX_IO_Processor.1> in library <work>.
+Module <M2_1_MXILINX_IO_Processor.1> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_IO_Processor.2> in library <work>.
+Module <M2_1_MXILINX_IO_Processor.2> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_IO_Processor.3> in library <work>.
+Module <M2_1_MXILINX_IO_Processor.3> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_IO_Processor.4> in library <work>.
+Module <M2_1_MXILINX_IO_Processor.4> is correct for synthesis.
+ 
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <cycle_count> in unit <Control_Unit> has a constant value of 000000000000000000000000000000001 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <Test_LCD>.
+    Related source file is "test_lcd.v".
+    Found 1-bit register for signal <a>.
+    Found 1-bit register for signal <b>.
+    Found 1-bit register for signal <c>.
+    Found 1-bit register for signal <d>.
+    Found 1-bit register for signal <e>.
+    Found 1-bit register for signal <rs>.
+    Found 1-bit register for signal <rw>.
+    Found 6-bit register for signal <code>.
+    Found 23-bit up counter for signal <count>.
+    Found 4-bit register for signal <init>.
+    Found 1-bit register for signal <refresh>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  18 D-type flip-flop(s).
+Unit <Test_LCD> synthesized.
+
+
+Synthesizing Unit <LCD_Decoder>.
+    Related source file is "LCD_Decoder.v".
+WARNING:Xst:646 - Signal <k> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bytes> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit subtractor for signal <ascii_0$addsub0000> created at line 76.
+    Found 4-bit comparator less for signal <ascii_0$cmp_lt0000> created at line 71.
+    Found 4-bit subtractor for signal <ascii_10$addsub0000> created at line 76.
+    Found 4-bit comparator less for signal <ascii_10$cmp_lt0000> created at line 71.
+    Found 4-bit subtractor for signal <ascii_12$addsub0000> created at line 76.
+    Found 4-bit comparator less for signal <ascii_12$cmp_lt0000> created at line 71.
+    Found 4-bit subtractor for signal <ascii_14$addsub0000> created at line 76.
+    Found 4-bit comparator less for signal <ascii_14$cmp_lt0000> created at line 71.
+    Found 4-bit subtractor for signal <ascii_2$addsub0000> created at line 76.
+    Found 4-bit comparator less for signal <ascii_2$cmp_lt0000> created at line 71.
+    Found 4-bit subtractor for signal <ascii_4$addsub0000> created at line 76.
+    Found 4-bit comparator less for signal <ascii_4$cmp_lt0000> created at line 71.
+    Found 4-bit subtractor for signal <ascii_6$addsub0000> created at line 76.
+    Found 4-bit comparator less for signal <ascii_6$cmp_lt0000> created at line 71.
+    Found 4-bit subtractor for signal <ascii_8$addsub0000> created at line 76.
+    Found 4-bit comparator less for signal <ascii_8$cmp_lt0000> created at line 71.
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+Unit <LCD_Decoder> synthesized.
+
+
+Synthesizing Unit <ALU_16bit>.
+    Related source file is "ALU_16bit.v".
+    Found 16-bit 8-to-1 multiplexer for signal <ALUOut>.
+    Found 1-bit xor2 for signal <Overflow>.
+    Found 16-bit addsub for signal <ALUOut$addsub0000>.
+    Found 16-bit shifter logical left for signal <ALUOut$shift0002> created at line 40.
+    Found 16-bit shifter logical right for signal <ALUOut$shift0003> created at line 41.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU_16bit> synthesized.
+
+
+Synthesizing Unit <Control_Unit>.
+    Related source file is "Control_Unit.v".
+WARNING:Xst:1780 - Signal <inst_count> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cycle_count> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <$old_state_11> of Case statement line 85 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <$old_state_11> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <$old_state_11>.
+    Found 1-bit register for signal <Asel>.
+    Found 2-bit register for signal <IorM>.
+    Found 2-bit register for signal <Jcontrol>.
+    Found 1-bit register for signal <ItypeSel>.
+    Found 2-bit register for signal <destAdr>.
+    Found 1-bit register for signal <Awrite>.
+    Found 1-bit register for signal <PCWrite>.
+    Found 1-bit register for signal <Bwrite>.
+    Found 1-bit register for signal <ALUWrite>.
+    Found 1-bit register for signal <IRWrite>.
+    Found 1-bit register for signal <inDataWrite>.
+    Found 1-bit register for signal <RegWrite>.
+    Found 1-bit register for signal <MWrite>.
+    Found 1-bit register for signal <Bsel>.
+    Found 1-bit register for signal <IsZeroWrite>.
+    Found 1-bit register for signal <MemWrite>.
+    Found 3-bit register for signal <ALUCtrl>.
+    Found 3-bit register for signal <destData>.
+    Found 22-bit register for signal <state>.
+    Summary:
+	inferred  47 D-type flip-flop(s).
+Unit <Control_Unit> synthesized.
+
+
+Synthesizing Unit <Mux_16bit_2i_1o>.
+    Related source file is "Mux_16bit_2i_1o.v".
+Unit <Mux_16bit_2i_1o> synthesized.
+
+
+Synthesizing Unit <ZeroExtend_12bit>.
+    Related source file is "ZeroExtend_12bit.v".
+Unit <ZeroExtend_12bit> synthesized.
+
+
+Synthesizing Unit <SignExtend_12bit>.
+    Related source file is "SignExtend_12bit.v".
+Unit <SignExtend_12bit> synthesized.
+
+
+Synthesizing Unit <SignExtend_8bit>.
+    Related source file is "SignExtend_8bit.v".
+Unit <SignExtend_8bit> synthesized.
+
+
+Synthesizing Unit <LeftShift_4>.
+    Related source file is "LeftShift_4.v".
+WARNING:Xst:647 - Input <a<15:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <LeftShift_4> synthesized.
+
+
+Synthesizing Unit <ZeroExtend_4bit>.
+    Related source file is "ZeroExtend_4bit.v".
+Unit <ZeroExtend_4bit> synthesized.
+
+
+Synthesizing Unit <Mux_16bit_4i_1o>.
+    Related source file is "Mux_16bit_4i_1o.v".
+    Found 16-bit 4-to-1 multiplexer for signal <r>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <Mux_16bit_4i_1o> synthesized.
+
+
+Synthesizing Unit <Mux_4bit_3i_1o>.
+    Related source file is "Mux_4bit_3i_1o.v".
+Unit <Mux_4bit_3i_1o> synthesized.
+
+
+Synthesizing Unit <Adder_16>.
+    Related source file is "Adder_16.v".
+    Found 16-bit adder for signal <r>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder_16> synthesized.
+
+
+Synthesizing Unit <Mux_16bit_6i_1o>.
+    Related source file is "Mux_16bit_6i_1o.v".
+Unit <Mux_16bit_6i_1o> synthesized.
+
+
+Synthesizing Unit <check_noOp>.
+    Related source file is "check_noOp.v".
+Unit <check_noOp> synthesized.
+
+
+Synthesizing Unit <Reg_File>.
+    Related source file is "Reg_File.v".
+    Found 256-bit register for signal <RF>.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <RF>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 256 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <Reg_File> synthesized.
+
+
+Synthesizing Unit <Mux_16bit_3i_1o>.
+    Related source file is "Mux_16bit_3i_1o.v".
+Unit <Mux_16bit_3i_1o> synthesized.
+
+
+Synthesizing Unit <SignExtend_1Bit>.
+    Related source file is "SignExtend_1bit.v".
+Unit <SignExtend_1Bit> synthesized.
+
+
+Synthesizing Unit <debouncer_MUSER_IO_Processor>.
+    Related source file is "IO_Processor.vf".
+Unit <debouncer_MUSER_IO_Processor> synthesized.
+
+
+Synthesizing Unit <debounceRotary_MUSER_IO_Processor>.
+    Related source file is "IO_Processor.vf".
+Unit <debounceRotary_MUSER_IO_Processor> synthesized.
+
+
+Synthesizing Unit <FD16RE_MXILINX_IO_Processor_1>.
+    Related source file is "IO_Processor.vf".
+Unit <FD16RE_MXILINX_IO_Processor_1> synthesized.
+
+
+Synthesizing Unit <FD16RE_MXILINX_IO_Processor_2>.
+    Related source file is "IO_Processor.vf".
+Unit <FD16RE_MXILINX_IO_Processor_2> synthesized.
+
+
+Synthesizing Unit <FD16RE_MXILINX_IO_Processor_3>.
+    Related source file is "IO_Processor.vf".
+Unit <FD16RE_MXILINX_IO_Processor_3> synthesized.
+
+
+Synthesizing Unit <FD16RE_MXILINX_IO_Processor_4>.
+    Related source file is "IO_Processor.vf".
+Unit <FD16RE_MXILINX_IO_Processor_4> synthesized.
+
+
+Synthesizing Unit <FD16RE_MXILINX_IO_Processor_5>.
+    Related source file is "IO_Processor.vf".
+Unit <FD16RE_MXILINX_IO_Processor_5> synthesized.
+
+
+Synthesizing Unit <FD16RE_MXILINX_IO_Processor_6>.
+    Related source file is "IO_Processor.vf".
+Unit <FD16RE_MXILINX_IO_Processor_6> synthesized.
+
+
+Synthesizing Unit <Append_Buffer_MUSER_IO_Processor>.
+    Related source file is "IO_Processor.vf".
+Unit <Append_Buffer_MUSER_IO_Processor> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_IO_Processor_1>.
+    Related source file is "IO_Processor.vf".
+Unit <M2_1_MXILINX_IO_Processor_1> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_IO_Processor_2>.
+    Related source file is "IO_Processor.vf".
+Unit <M2_1_MXILINX_IO_Processor_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_IO_Processor_3>.
+    Related source file is "IO_Processor.vf".
+Unit <M2_1_MXILINX_IO_Processor_3> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_IO_Processor_4>.
+    Related source file is "IO_Processor.vf".
+Unit <M2_1_MXILINX_IO_Processor_4> synthesized.
+
+
+Synthesizing Unit <Final_Processor_MUSER_IO_Processor>.
+    Related source file is "IO_Processor.vf".
+WARNING:Xst:646 - Signal <Jump_ZE<15:12>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <IorM_out<15:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Final_Processor_MUSER_IO_Processor> synthesized.
+
+
+Synthesizing Unit <shift4_MUSER_IO_Processor>.
+    Related source file is "IO_Processor.vf".
+Unit <shift4_MUSER_IO_Processor> synthesized.
+
+
+Synthesizing Unit <RotaryInputControl_MUSER_IO_Processor>.
+    Related source file is "IO_Processor.vf".
+Unit <RotaryInputControl_MUSER_IO_Processor> synthesized.
+
+
+Synthesizing Unit <IO_Processor>.
+    Related source file is "IO_Processor.vf".
+Unit <IO_Processor> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 11
+ 16-bit adder                                          : 2
+ 16-bit addsub                                         : 1
+ 4-bit subtractor                                      : 8
+# Counters                                             : 1
+ 23-bit up counter                                     : 1
+# Registers                                            : 48
+ 1-bit register                                        : 25
+ 16-bit register                                       : 16
+ 2-bit register                                        : 3
+ 22-bit register                                       : 1
+ 3-bit register                                        : 2
+ 6-bit register                                        : 1
+# Comparators                                          : 8
+ 4-bit comparator less                                 : 8
+# Multiplexers                                         : 3
+ 16-bit 16-to-1 multiplexer                            : 1
+ 16-bit 4-to-1 multiplexer                             : 1
+ 16-bit 8-to-1 multiplexer                             : 1
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/debounce_counter.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/dualportMem.ngc>.
+Reading core <ipcore_dir/IOcounter4.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <debounce_counter> for timing and area information for instance <XLXI_85>.
+Loading core <dualportMem> for timing and area information for instance <XLXI_136>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_17>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_18>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_19>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_22>.
+WARNING:Xst:1426 - The value init of the FF/Latch init_0 hinder the constant cleaning in the block XLXI_2.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch init_1 hinder the constant cleaning in the block XLXI_2.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch init_2 hinder the constant cleaning in the block XLXI_2.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch init_3 hinder the constant cleaning in the block XLXI_2.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <RF_0_15> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_14> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_13> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_12> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_11> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_10> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_9> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_8> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_7> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_6> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_5> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_4> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_3> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_2> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_1> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_0> (without init value) has a constant value of 0 in block <XLXI_137>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <state_7> (without init value) has a constant value of 0 in block <Control>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 11
+ 16-bit adder                                          : 2
+ 16-bit addsub                                         : 1
+ 4-bit subtractor                                      : 8
+# Counters                                             : 1
+ 23-bit up counter                                     : 1
+# Registers                                            : 435
+ Flip-Flops                                            : 435
+# Comparators                                          : 8
+ 4-bit comparator less                                 : 8
+# Multiplexers                                         : 18
+ 1-bit 16-to-1 multiplexer                             : 16
+ 16-bit 4-to-1 multiplexer                             : 1
+ 16-bit 8-to-1 multiplexer                             : 1
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch init_0 hinder the constant cleaning in the block Test_LCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch init_1 hinder the constant cleaning in the block Test_LCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch init_2 hinder the constant cleaning in the block Test_LCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch init_3 hinder the constant cleaning in the block Test_LCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <state_7> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RF_0_0> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_1> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_2> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_3> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_4> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_5> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_6> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_7> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_8> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_9> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_10> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_11> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_12> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_13> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_14> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_15> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <IO_Processor> ...
+
+Optimizing unit <Test_LCD> ...
+
+Optimizing unit <LCD_Decoder> ...
+
+Optimizing unit <ALU_16bit> ...
+
+Optimizing unit <Control_Unit> ...
+
+Optimizing unit <Reg_File> ...
+
+Optimizing unit <debouncer_MUSER_IO_Processor> ...
+
+Optimizing unit <debounceRotary_MUSER_IO_Processor> ...
+
+Optimizing unit <FD16RE_MXILINX_IO_Processor_1> ...
+
+Optimizing unit <FD16RE_MXILINX_IO_Processor_2> ...
+
+Optimizing unit <FD16RE_MXILINX_IO_Processor_3> ...
+
+Optimizing unit <FD16RE_MXILINX_IO_Processor_4> ...
+
+Optimizing unit <FD16RE_MXILINX_IO_Processor_5> ...
+
+Optimizing unit <FD16RE_MXILINX_IO_Processor_6> ...
+
+Optimizing unit <Append_Buffer_MUSER_IO_Processor> ...
+
+Optimizing unit <M2_1_MXILINX_IO_Processor_1> ...
+
+Optimizing unit <M2_1_MXILINX_IO_Processor_2> ...
+
+Optimizing unit <M2_1_MXILINX_IO_Processor_3> ...
+
+Optimizing unit <M2_1_MXILINX_IO_Processor_4> ...
+
+Optimizing unit <Final_Processor_MUSER_IO_Processor> ...
+
+Optimizing unit <shift4_MUSER_IO_Processor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block IO_Processor, actual ratio is 13.
+
+Pipelining and Register Balancing Report ...
+
+Processing Unit <IO_Processor> :
+	Register(s) XLXI_18/Control/state_2 has(ve) been backward balanced into : XLXI_18/Control/state_2_BRB0 XLXI_18/Control/state_2_BRB1 XLXI_18/Control/state_2_BRB3.
+	Register(s) XLXI_18/Control/state_3 has(ve) been backward balanced into : XLXI_18/Control/state_3_BRB0 XLXI_18/Control/state_3_BRB1 XLXI_18/Control/state_3_BRB2.
+	Register(s) XLXI_18/Control/state_5 has(ve) been backward balanced into : XLXI_18/Control/state_5_BRB0 XLXI_18/Control/state_5_BRB2 .
+	Register(s) XLXI_18/Control/state_8 has(ve) been backward balanced into : XLXI_18/Control/state_8_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_0 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_0_BRB0 XLXI_18/XLXI_137/RF_3_0_BRB2 .
+	Register(s) XLXI_18/XLXI_137/RF_3_1 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_1_BRB0 XLXI_18/XLXI_137/RF_3_1_BRB1 XLXI_18/XLXI_137/RF_3_1_BRB2.
+	Register(s) XLXI_18/XLXI_137/RF_3_10 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_10_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_11 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_11_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_12 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_12_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_13 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_13_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_14 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_14_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_15 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_15_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_2 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_2_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_3 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_3_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_4 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_4_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_5 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_5_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_6 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_6_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_7 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_7_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_8 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_8_BRB0 .
+	Register(s) XLXI_18/XLXI_137/RF_3_9 has(ve) been backward balanced into : XLXI_18/XLXI_137/RF_3_9_BRB0 .
+Unit <IO_Processor> processed.
+
+Final Macro Processing ...
+
+Processing Unit <IO_Processor> :
+	Found 2-bit shift register for signal <XLXI_2/e>.
+Unit <IO_Processor> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 446
+ Flip-Flops                                            : 446
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : IO_Processor.ngr
+Top Level Output File Name         : IO_Processor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 1320
+#      AND2                        : 12
+#      AND2B1                      : 9
+#      BUF                         : 17
+#      GND                         : 2
+#      INV                         : 5
+#      LUT1                        : 37
+#      LUT2                        : 37
+#      LUT2_D                      : 1
+#      LUT2_L                      : 5
+#      LUT3                        : 410
+#      LUT3_D                      : 13
+#      LUT3_L                      : 11
+#      LUT4                        : 346
+#      LUT4_D                      : 8
+#      LUT4_L                      : 24
+#      MUXCY                       : 72
+#      MUXF5                       : 174
+#      MUXF6                       : 32
+#      MUXF7                       : 15
+#      OR2                         : 13
+#      VCC                         : 2
+#      XOR2                        : 4
+#      XORCY                       : 71
+# FlipFlops/Latches                : 447
+#      FD                          : 49
+#      FDC                         : 7
+#      FDCE                        : 7
+#      FDCPE                       : 4
+#      FDE                         : 247
+#      FDR                         : 13
+#      FDRE                        : 96
+#      FDRS                        : 8
+#      FDS                         : 16
+# RAMS                             : 1
+#      RAMB16_S36_S36              : 1
+# Shift Registers                  : 1
+#      SRL16                       : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 5
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      592  out of   4656    12%  
+ Number of Slice Flip Flops:            447  out of   9312     4%  
+ Number of 4 input LUTs:                898  out of   9312     9%  
+    Number used as logic:               897
+    Number used as Shift registers:       1
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    232     6%  
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 499   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+-----------------------------+-------+
+Control Signal                     | Buffer(FF name)             | Load  |
+-----------------------------------+-----------------------------+-------+
+XLXN_98(XLXI_37:G)                 | NONE(XLXI_19/XLXI_22)       | 18    |
+Reset_Out(XLXI_19/XLXI_80:Q)       | NONE(XLXI_31/XLXI_1/XLXI_13)| 4     |
+-----------------------------------+-----------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 11.391ns (Maximum Frequency: 87.788MHz)
+   Minimum input arrival time before clock: 6.806ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: 6.061ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 11.391ns (frequency: 87.788MHz)
+  Total number of paths / destination ports: 17857 / 1120
+-------------------------------------------------------------------------
+Delay:               11.391ns (Levels of Logic = 23)
+  Source:            XLXI_18/Control/ALUCtrl_2 (FF)
+  Destination:       XLXI_18/XLXI_137/RF_3_1_BRB2 (FF)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: XLXI_18/Control/ALUCtrl_2 to XLXI_18/XLXI_137/RF_3_1_BRB2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             38   0.591   1.439  XLXI_18/Control/ALUCtrl_2 (XLXI_18/Control/ALUCtrl_2)
+     LUT3_D:I0->O         15   0.704   1.052  XLXI_18/ALU/ALUOut_or00011 (XLXI_18/ALU/ALUOut_or0001)
+     LUT3:I2->O            1   0.704   0.455  XLXI_18/ALU/ALUOut_mux0000<0>1 (XLXI_18/ALU/ALUOut_mux0000<0>)
+     LUT3:I2->O            1   0.704   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_lut<0> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<0> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<1> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<2> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<3> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<4> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<5> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<6> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<7> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<8> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<9> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<10> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<11> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<12> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<13> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<14> (XLXI_18/ALU/Maddsub_ALUOut_addsub0000_cy<14>)
+     XORCY:CI->O           1   0.804   0.424  XLXI_18/ALU/Maddsub_ALUOut_addsub0000_xor<15> (XLXI_18/ALU/ALUOut_addsub0000<15>)
+     LUT4:I3->O            1   0.704   0.000  XLXI_18/ALU/ALUctrl<2>6_F (N376)
+     MUXF5:I0->O           2   0.321   0.451  XLXI_18/ALU/ALUctrl<2>6 (XLXI_18/ALU_output<15>)
+     LUT4:I3->O            1   0.704   0.000  XLXI_18/XLXI_137/RF_3_mux0000<0>1_wg_lut<4> (XLXI_18/XLXI_137/RF_3_mux0000<0>1_wg_lut<4>)
+     MUXCY:S->O            1   0.736   0.000  XLXI_18/XLXI_137/RF_3_mux0000<0>1_wg_cy<4> (XLXI_18/XLXI_137/RF_3_mux0000<0>1_wg_cy<4>)
+     FDE:D                     0.308          XLXI_18/XLXI_137/RF_3_1_BRB2
+    ----------------------------------------
+    Total                     11.391ns (7.570ns logic, 3.821ns route)
+                                       (66.5% logic, 33.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 52 / 42
+-------------------------------------------------------------------------
+Offset:              6.806ns (Levels of Logic = 6)
+  Source:            switch1 (PAD)
+  Destination:       XLXI_31/XLXI_1/XLXI_15 (FF)
+  Destination Clock: Clock rising
+
+  Data Path: switch1 to XLXI_31/XLXI_1/XLXI_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  switch1_IBUF (switch1_IBUF)
+     BUF:I->O              2   0.704   0.447  XLXI_32 (led0_OBUF)
+     INV:I->O              8   0.704   0.757  XLXI_33 (shift_up)
+     begin scope: 'XLXI_31/XLXI_1/XLXI_21'
+     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'XLXI_31/XLXI_1/XLXI_21'
+     FDCPE:D                   0.308          XLXI_31/XLXI_1/XLXI_6
+    ----------------------------------------
+    Total                      6.806ns (4.342ns logic, 2.464ns route)
+                                       (63.8% logic, 36.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            XLXI_2/a (FF)
+  Destination:       a (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: XLXI_2/a to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.420  XLXI_2/a (XLXI_2/a)
+     OBUF:I->O                 3.272          a_OBUF (a)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.061ns (Levels of Logic = 3)
+  Source:            switch1 (PAD)
+  Destination:       led0 (PAD)
+
+  Data Path: switch1 to led0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  switch1_IBUF (switch1_IBUF)
+     BUF:I->O              2   0.704   0.447  XLXI_32 (led0_OBUF)
+     OBUF:I->O                 3.272          led0_OBUF (led0)
+    ----------------------------------------
+    Total                      6.061ns (5.194ns logic, 0.867ns route)
+                                       (85.7% logic, 14.3% route)
+
+=========================================================================
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_31/XLXI_22.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_31/XLXI_22.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_31/XLXI_19.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_31/XLXI_19.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_31/XLXI_18.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_31/XLXI_18.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_31/XLXI_17.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_31/XLXI_17.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_36/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_36/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_19/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_19/XLXI_85.
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.00 secs
+ 
+--> 
+
+Total memory usage is 293488 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  109 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

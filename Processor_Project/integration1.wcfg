@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor_Processor_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Processor_Processor_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/Processor_Processor_sch_tb/IR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/write_address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_address[3:0]</obj_property>
+      <obj_property name="ObjectShortName">write_address[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/Data_In" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data_In[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_In[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/is_zero_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">is_zero_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">is_zero_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/Clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Clock</obj_property>
+      <obj_property name="ObjectShortName">Clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/IR_Write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IR_Write</obj_property>
+      <obj_property name="ObjectShortName">IR_Write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/Awrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Awrite</obj_property>
+      <obj_property name="ObjectShortName">Awrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/Bwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Bwrite</obj_property>
+      <obj_property name="ObjectShortName">Bwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/read_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/reg_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_write</obj_property>
+      <obj_property name="ObjectShortName">reg_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Processor_Processor_sch_tb/iszero_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">iszero_write</obj_property>
+      <obj_property name="ObjectShortName">iszero_write</obj_property>
+   </wvobject>
+</wave_config>

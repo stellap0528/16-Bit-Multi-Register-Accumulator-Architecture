@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/xst"
+elaborate
+-ifn Mux_16bit_2i_1o.prj
+-ifmt mixed

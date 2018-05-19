@@ -1,0 +1,180 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf
+
+Design file:              Processor.ncd
+Physical constraint file: Processor.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clock
+----------------+------------+------------+------------------+--------+
+                |Max Setup to|Max Hold to |                  | Clock  |
+Source          | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+----------------+------------+------------+------------------+--------+
+Awrite          |    3.723(R)|   -0.009(R)|Clock_BUFGP       |   0.000|
+Bwrite          |    3.668(R)|   -0.133(R)|Clock_BUFGP       |   0.000|
+Data_In<0>      |   -0.296(R)|    1.460(R)|Clock_BUFGP       |   0.000|
+Data_In<1>      |   -0.274(R)|    1.434(R)|Clock_BUFGP       |   0.000|
+Data_In<2>      |   -0.268(R)|    1.427(R)|Clock_BUFGP       |   0.000|
+Data_In<3>      |   -0.316(R)|    1.464(R)|Clock_BUFGP       |   0.000|
+Data_In<4>      |    0.895(R)|    0.503(R)|Clock_BUFGP       |   0.000|
+Data_In<5>      |    0.319(R)|    0.961(R)|Clock_BUFGP       |   0.000|
+Data_In<6>      |    0.228(R)|    1.034(R)|Clock_BUFGP       |   0.000|
+Data_In<7>      |   -0.277(R)|    1.438(R)|Clock_BUFGP       |   0.000|
+Data_In<8>      |    0.979(R)|    0.420(R)|Clock_BUFGP       |   0.000|
+Data_In<9>      |    1.249(R)|    0.203(R)|Clock_BUFGP       |   0.000|
+Data_In<10>     |    0.760(R)|    0.600(R)|Clock_BUFGP       |   0.000|
+Data_In<11>     |    0.623(R)|    0.713(R)|Clock_BUFGP       |   0.000|
+Data_In<12>     |    0.350(R)|    0.939(R)|Clock_BUFGP       |   0.000|
+Data_In<13>     |   -0.004(R)|    1.222(R)|Clock_BUFGP       |   0.000|
+Data_In<14>     |   -0.226(R)|    1.397(R)|Clock_BUFGP       |   0.000|
+Data_In<15>     |   -0.353(R)|    1.499(R)|Clock_BUFGP       |   0.000|
+IR_Write        |    2.647(R)|    1.293(R)|Clock_BUFGP       |   0.000|
+is_zero_data<0> |    1.020(R)|    0.391(R)|Clock_BUFGP       |   0.000|
+is_zero_data<1> |    0.638(R)|    0.697(R)|Clock_BUFGP       |   0.000|
+is_zero_data<2> |    0.605(R)|    0.739(R)|Clock_BUFGP       |   0.000|
+is_zero_data<3> |    1.025(R)|    0.403(R)|Clock_BUFGP       |   0.000|
+is_zero_data<4> |    0.660(R)|    0.695(R)|Clock_BUFGP       |   0.000|
+is_zero_data<5> |    1.139(R)|    0.311(R)|Clock_BUFGP       |   0.000|
+is_zero_data<6> |    0.952(R)|    0.461(R)|Clock_BUFGP       |   0.000|
+is_zero_data<7> |    1.054(R)|    0.380(R)|Clock_BUFGP       |   0.000|
+is_zero_data<8> |    0.707(R)|    0.656(R)|Clock_BUFGP       |   0.000|
+is_zero_data<9> |    0.964(R)|    0.451(R)|Clock_BUFGP       |   0.000|
+is_zero_data<10>|    0.707(R)|    0.654(R)|Clock_BUFGP       |   0.000|
+is_zero_data<11>|    0.970(R)|    0.443(R)|Clock_BUFGP       |   0.000|
+is_zero_data<12>|    1.580(R)|   -0.056(R)|Clock_BUFGP       |   0.000|
+is_zero_data<13>|    1.577(R)|   -0.054(R)|Clock_BUFGP       |   0.000|
+is_zero_data<14>|    1.390(R)|    0.096(R)|Clock_BUFGP       |   0.000|
+is_zero_data<15>|    1.590(R)|   -0.064(R)|Clock_BUFGP       |   0.000|
+iszero_write    |    6.186(R)|   -1.177(R)|Clock_BUFGP       |   0.000|
+reg_write       |    8.935(R)|   -1.826(R)|Clock_BUFGP       |   0.000|
+write_address<0>|    8.060(R)|   -0.771(R)|Clock_BUFGP       |   0.000|
+write_address<1>|    7.723(R)|   -0.839(R)|Clock_BUFGP       |   0.000|
+write_address<2>|    7.233(R)|   -0.713(R)|Clock_BUFGP       |   0.000|
+write_address<3>|    8.265(R)|   -0.957(R)|Clock_BUFGP       |   0.000|
+----------------+------------+------------+------------------+--------+
+
+Clock Clock to Pad
+-------------+------------+------------------+--------+
+             | clk (edge) |                  | Clock  |
+Destination  |   to PAD   |Internal Clock(s) | Phase  |
+-------------+------------+------------------+--------+
+A<0>         |    7.414(R)|Clock_BUFGP       |   0.000|
+A<1>         |    7.684(R)|Clock_BUFGP       |   0.000|
+A<2>         |    8.117(R)|Clock_BUFGP       |   0.000|
+A<3>         |    8.033(R)|Clock_BUFGP       |   0.000|
+A<4>         |    7.411(R)|Clock_BUFGP       |   0.000|
+A<5>         |    7.198(R)|Clock_BUFGP       |   0.000|
+A<6>         |    8.110(R)|Clock_BUFGP       |   0.000|
+A<7>         |    8.117(R)|Clock_BUFGP       |   0.000|
+A<8>         |    8.168(R)|Clock_BUFGP       |   0.000|
+A<9>         |    7.995(R)|Clock_BUFGP       |   0.000|
+A<10>        |    8.751(R)|Clock_BUFGP       |   0.000|
+A<11>        |    8.155(R)|Clock_BUFGP       |   0.000|
+A<12>        |    7.474(R)|Clock_BUFGP       |   0.000|
+A<13>        |    7.249(R)|Clock_BUFGP       |   0.000|
+A<14>        |    7.805(R)|Clock_BUFGP       |   0.000|
+A<15>        |    8.090(R)|Clock_BUFGP       |   0.000|
+B<0>         |    8.488(R)|Clock_BUFGP       |   0.000|
+B<1>         |    8.096(R)|Clock_BUFGP       |   0.000|
+B<2>         |    8.181(R)|Clock_BUFGP       |   0.000|
+B<3>         |    8.616(R)|Clock_BUFGP       |   0.000|
+B<4>         |    8.075(R)|Clock_BUFGP       |   0.000|
+B<5>         |    8.080(R)|Clock_BUFGP       |   0.000|
+B<6>         |    7.850(R)|Clock_BUFGP       |   0.000|
+B<7>         |    8.150(R)|Clock_BUFGP       |   0.000|
+B<8>         |    7.762(R)|Clock_BUFGP       |   0.000|
+B<9>         |    7.885(R)|Clock_BUFGP       |   0.000|
+B<10>        |    7.976(R)|Clock_BUFGP       |   0.000|
+B<11>        |    9.162(R)|Clock_BUFGP       |   0.000|
+B<12>        |    8.799(R)|Clock_BUFGP       |   0.000|
+B<13>        |    8.497(R)|Clock_BUFGP       |   0.000|
+B<14>        |    8.960(R)|Clock_BUFGP       |   0.000|
+B<15>        |    8.075(R)|Clock_BUFGP       |   0.000|
+IR<0>        |    7.550(R)|Clock_BUFGP       |   0.000|
+IR<1>        |    8.837(R)|Clock_BUFGP       |   0.000|
+IR<2>        |    8.960(R)|Clock_BUFGP       |   0.000|
+IR<3>        |    9.314(R)|Clock_BUFGP       |   0.000|
+IR<4>        |    8.394(R)|Clock_BUFGP       |   0.000|
+IR<5>        |    8.623(R)|Clock_BUFGP       |   0.000|
+IR<6>        |    8.799(R)|Clock_BUFGP       |   0.000|
+IR<7>        |    8.441(R)|Clock_BUFGP       |   0.000|
+IR<8>        |    9.791(R)|Clock_BUFGP       |   0.000|
+IR<9>        |    9.745(R)|Clock_BUFGP       |   0.000|
+IR<10>       |    8.887(R)|Clock_BUFGP       |   0.000|
+IR<11>       |    8.852(R)|Clock_BUFGP       |   0.000|
+IR<12>       |    9.268(R)|Clock_BUFGP       |   0.000|
+IR<13>       |    8.998(R)|Clock_BUFGP       |   0.000|
+IR<14>       |    8.654(R)|Clock_BUFGP       |   0.000|
+IR<15>       |    8.020(R)|Clock_BUFGP       |   0.000|
+read_data<0> |   11.551(R)|Clock_BUFGP       |   0.000|
+read_data<1> |   11.823(R)|Clock_BUFGP       |   0.000|
+read_data<2> |   11.328(R)|Clock_BUFGP       |   0.000|
+read_data<3> |   11.638(R)|Clock_BUFGP       |   0.000|
+read_data<4> |   11.323(R)|Clock_BUFGP       |   0.000|
+read_data<5> |   11.576(R)|Clock_BUFGP       |   0.000|
+read_data<6> |   11.189(R)|Clock_BUFGP       |   0.000|
+read_data<7> |   11.875(R)|Clock_BUFGP       |   0.000|
+read_data<8> |   11.202(R)|Clock_BUFGP       |   0.000|
+read_data<9> |   11.530(R)|Clock_BUFGP       |   0.000|
+read_data<10>|   11.466(R)|Clock_BUFGP       |   0.000|
+read_data<11>|   12.342(R)|Clock_BUFGP       |   0.000|
+read_data<12>|   12.607(R)|Clock_BUFGP       |   0.000|
+read_data<13>|   12.278(R)|Clock_BUFGP       |   0.000|
+read_data<14>|   11.495(R)|Clock_BUFGP       |   0.000|
+read_data<15>|   11.900(R)|Clock_BUFGP       |   0.000|
+-------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    4.538|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Oct 29 17:45:24 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 169 MB
+
+
+

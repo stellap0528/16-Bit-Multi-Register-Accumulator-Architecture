@@ -1,0 +1,24 @@
+[Inputs]
+=data_out[15:0]=
+=data_in[15:0]=
+[Outputs]
+=byte1_low[3:0]=
+=byte1_up[3:0]=
+=byte2_low[3:0]=
+=byte2_up[3:0]=
+=byte3_low[3:0]=
+=byte3_up[3:0]=
+=byte4_low[3:0]=
+=byte4_up[3:0]=
+=byte5_low[3:0]=
+=byte5_up[3:0]=
+=byte6_low[3:0]=
+=byte6_up[3:0]=
+=byte7_low[3:0]=
+=byte7_up[3:0]=
+=byte8_low[3:0]=
+=byte8_up[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel LCD_Decoder
+

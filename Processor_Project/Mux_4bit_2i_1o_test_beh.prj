@@ -1,0 +1,3 @@
+verilog work "../CompArch_Project_Xilinx_project/Mux_4bit_2i_1o.v"
+verilog work "../CompArch_Project_Xilinx_project/Mux_4bit_2i_1o_test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,3 @@
+MODULE Register_File
+	SUBMODULE RegisterFile_Decoder
+		INSTANCE XLXI_51

@@ -1,0 +1,431 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Reg_File.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Reg_File.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Reg_File"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Reg_File
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../CompArch_Project_Xilinx_project/Reg_File.v" in library work
+Module <Reg_File> compiled
+No errors in compilation
+Analysis of file <"Reg_File.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Reg_File> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Reg_File>.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 36: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 37: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 38: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 39: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 40: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 41: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 42: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 43: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 44: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 45: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 46: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 47: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 48: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 49: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 50: Signal RF in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "../CompArch_Project_Xilinx_project/Reg_File.v" line 51: Signal RF in initial block is partially initialized. The initialization will be ignored.
+Module <Reg_File> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Reg_File>.
+    Related source file is "../CompArch_Project_Xilinx_project/Reg_File.v".
+    Found 16-bit register for signal <read_data>.
+    Found 256-bit register for signal <RF>.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <RF>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 272 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <Reg_File> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 17
+ 16-bit register                                       : 17
+# Multiplexers                                         : 1
+ 16-bit 16-to-1 multiplexer                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <RF_0_0> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_1> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_2> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_3> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_4> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_5> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_6> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_7> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_8> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_9> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_10> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_11> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_12> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_13> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_14> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_15> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 272
+ Flip-Flops                                            : 272
+# Multiplexers                                         : 16
+ 1-bit 16-to-1 multiplexer                             : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <RF_0_0> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_1> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_2> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_3> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_4> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_5> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_6> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_7> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_8> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_9> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_10> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_11> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_12> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_13> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_14> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RF_0_15> (without init value) has a constant value of 0 in block <Reg_File>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Reg_File> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Reg_File, actual ratio is 4.
+FlipFlop RF_15_15 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_14 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_13 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_12 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_11 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_10 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_9 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_8 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_7 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RF_15_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 272
+ Flip-Flops                                            : 272
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Reg_File.ngr
+Top Level Output File Name         : Reg_File
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 75
+
+Cell Usage :
+# BELS                             : 280
+#      GND                         : 1
+#      LUT2                        : 18
+#      LUT3                        : 145
+#      LUT4                        : 3
+#      MUXF5                       : 65
+#      MUXF6                       : 32
+#      MUXF7                       : 16
+# FlipFlops/Latches                : 272
+#      FDE                         : 256
+#      FDRE                        : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 74
+#      IBUF                        : 42
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      219  out of   4656     4%  
+ Number of Slice Flip Flops:            256  out of   9312     2%  
+ Number of 4 input LUTs:                166  out of   9312     1%  
+ Number of IOs:                          75
+ Number of bonded IOBs:                  75  out of    232    32%  
+    IOB Flip Flops:                      16
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 272   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.465ns (Maximum Frequency: 288.600MHz)
+   Minimum input arrival time before clock: 6.850ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 3.465ns (frequency: 288.600MHz)
+  Total number of paths / destination ports: 240 / 16
+-------------------------------------------------------------------------
+Delay:               3.465ns (Levels of Logic = 4)
+  Source:            RF_1_0 (FF)
+  Destination:       read_data_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: RF_1_0 to read_data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.499  RF_1_0 (RF_1_0)
+     LUT2:I1->O            1   0.704   0.000  mux_8 (mux_8)
+     MUXF5:I0->O           1   0.321   0.000  mux_6_f5 (mux_6_f5)
+     MUXF6:I0->O           1   0.521   0.000  mux_4_f6 (mux_4_f6)
+     MUXF7:I0->O           1   0.521   0.000  mux_2_f7 (_COND_1<0>)
+     FDRE:D                    0.308          read_data_0
+    ----------------------------------------
+    Total                      3.465ns (2.966ns logic, 0.499ns route)
+                                       (85.6% logic, 14.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 2160 / 560
+-------------------------------------------------------------------------
+Offset:              6.850ns (Levels of Logic = 4)
+  Source:            wa<1> (PAD)
+  Destination:       RF_3_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: wa<1> to RF_3_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  wa_1_IBUF (wa_1_IBUF)
+     LUT4:I0->O            3   0.704   0.566  RF_3_cmp_eq00011 (RF_3_cmp_eq0001)
+     LUT4:I2->O           32   0.704   1.437  read_data_and00001 (read_data_and0000)
+     LUT3:I0->O            1   0.704   0.000  RF_3_mux0000<9>1 (RF_3_mux0000<9>)
+     FDE:D                     0.308          RF_3_9
+    ----------------------------------------
+    Total                      6.850ns (3.638ns logic, 3.212ns route)
+                                       (53.1% logic, 46.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            RF_15_15_1 (FF)
+  Destination:       acc_data<15> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: RF_15_15_1 to acc_data<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  RF_15_15_1 (RF_15_15_1)
+     OBUF:I->O                 3.272          acc_data_15_OBUF (acc_data<15>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.58 secs
+ 
+--> 
+
+Total memory usage is 310964 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   48 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

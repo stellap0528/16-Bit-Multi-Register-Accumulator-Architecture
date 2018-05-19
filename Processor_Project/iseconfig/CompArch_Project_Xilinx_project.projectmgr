@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="CompArch_Project_Xilinx_project" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Processor C:|Users|johnsor2|Documents|College|Junior|Q1|Comp Arch I|CompArch_Project_Xilinx_project|Processor.sch</ClosedNode>
+         <ClosedNode>/Processor_integration_2 C:|Users|johnsor2|Documents|College|Junior|Q1|Comp Arch I|CompArch_Project_Xilinx_project|Processor_integration_2.sch</ClosedNode>
+         <ClosedNode>/Register_File C:|Users|johnsor2|Documents|College|Junior|Q1|Comp Arch I|CompArch_Project_Xilinx_project|Register_File.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Mux_16bit_4i_1o (C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/CompArch_Project_Xilinx_project/Mux_16bit_4i_1o.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a2000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a20000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Mux_16bit_4i_1o (C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/CompArch_Project_Xilinx_project/Mux_16bit_4i_1o.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Update All Schematic Files</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Update All Schematic Files</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ALU_16bit.v</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000038e000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002c20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ALU_16bit.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000118000000010001000100000000000000000000000064ffffffff000000810000000000000001000001180000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU_16bit_test C:|Users|johnsor2|Documents|College|Junior|Q1|Comp Arch I|CompArch_Project_Xilinx_project|ALU_16bit_test.v</ClosedNode>
+         <ClosedNode>/ALU_16bit_test C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|ALU_16bit_test.v</ClosedNode>
+         <ClosedNode>/LeftShift_4_test C:|Users|johnsor2|Documents|College|Junior|Q1|Comp Arch I|CompArch_Project_Xilinx_project|LeftShift_4_test.v</ClosedNode>
+         <ClosedNode>/LeftShift_4_test C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|LeftShift_4_test.v</ClosedNode>
+         <ClosedNode>/Mux_16bit_2i_1o_test C:|Users|johnsor2|Documents|College|Junior|Q1|Comp Arch I|CompArch_Project_Xilinx_project|Mux_16bit_2i_1o_test.v</ClosedNode>
+         <ClosedNode>/Mux_16bit_2i_1o_test C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|Mux_16bit_2i_1o_test.v</ClosedNode>
+         <ClosedNode>/Mux_16bit_3i_1o_test C:|Users|johnsor2|Documents|College|Junior|Q1|Comp Arch I|CompArch_Project_Xilinx_project|Mux_16bit_3i_1o_test.v</ClosedNode>
+         <ClosedNode>/Mux_16bit_3i_1o_test C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|Mux_16bit_3i_1o_test.v</ClosedNode>
+         <ClosedNode>/Mux_16bit_4i_1o_test C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|Mux_16bit_4i_1o_test.v</ClosedNode>
+         <ClosedNode>/Mux_16bit_5i_1o_test C:|Users|johnsor2|Documents|College|Junior|Q1|Comp Arch I|CompArch_Project_Xilinx_project|Mux_16bit_5i_1o_test.v</ClosedNode>
+         <ClosedNode>/Mux_16bit_5i_1o_test C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|Mux_16bit_5i_1o_test.v</ClosedNode>
+         <ClosedNode>/Mux_4bit_2i_1o_test C:|Users|johnsor2|Documents|College|Junior|Q1|Comp Arch I|CompArch_Project_Xilinx_project|Mux_4bit_2i_1o_test.v</ClosedNode>
+         <ClosedNode>/Mux_4bit_2i_1o_test C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|Mux_4bit_2i_1o_test.v</ClosedNode>
+         <ClosedNode>/Processor_integration_2_Processor_integration_2_sch_tb C:|Users|johnsor2|Documents|College|Junior|Q1|Comp Arch I|CompArch_Project_Xilinx_project|Processor_test_integration_2.v</ClosedNode>
+         <ClosedNode>/Reg_File_test_0 C:|Users|johnsor2|Documents|College|Junior|Q1|Comp Arch I|CompArch_Project_Xilinx_project|Reg_File_test_0.v</ClosedNode>
+         <ClosedNode>/Reg_File_test_0 C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|Reg_File_test_0.v</ClosedNode>
+         <ClosedNode>/Register_File C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|Register_File.sch</ClosedNode>
+         <ClosedNode>/SignExtend_12bit_test C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|SignExtend_12bit_test.v</ClosedNode>
+         <ClosedNode>/SignExtend_1bit_test C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|SignExtend_1bit_test.v</ClosedNode>
+         <ClosedNode>/ZeroExtend_12bit_test C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|ZeroExtend_12bit_test.v</ClosedNode>
+         <ClosedNode>/ZeroExtend_4bit_test C:|Users|steffygm|Drive|Y3|Y3_Q1|CSSE232|Comp_Arch_Project_Local|CompArch_Project_Xilinx_project|ZeroExtend_4bit_test.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Mux_16bit_4i_1o_test (C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/CompArch_Project_Xilinx_project/Mux_16bit_4i_1o_test.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000283000000020000000000000000000000000200000064ffffffff000000810000000300000002000002830000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Mux_16bit_4i_1o_test (C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/CompArch_Project_Xilinx_project/Mux_16bit_4i_1o_test.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>xc3s500e-4fg320</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014f000000020000000000000000000000000000000064ffffffff000000810000000000000002000000df0000000100000000000000700000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>xc3s500e-4fg320</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+</Project>

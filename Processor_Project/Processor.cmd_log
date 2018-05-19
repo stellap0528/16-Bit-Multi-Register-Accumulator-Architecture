@@ -1,0 +1,77 @@
+sch2hdl -sympath {C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory} -intstyle ise -family spartan3e -verilog Processor_drc.vf -w C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/CompArch_Project_Xilinx_project/Processor.sch 
+xst -intstyle ise -ifn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/Processor.xst" -ofn "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Processor.ngc Processor_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 
+sch2sym -intstyle ise -family spartan3e -w -refsym Processor {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/CompArch_Project_Xilinx_project/Processor.sch} {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/CompArch_Project_Xilinx_project/Processor.sym} 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 
+xst -intstyle ise -ifn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.xst" -ofn "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/Processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Processor.ngc" Processor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Processor_map.ncd Processor.ngd Processor.pcf 
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd Processor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr Processor.pcf 

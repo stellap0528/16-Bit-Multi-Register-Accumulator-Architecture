@@ -1,0 +1,28 @@
+Command line:
+   rstcon_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64098
+
+Sat Nov 11 16:52:43 2017
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 1657.16 Meg
+
+ Total Signals          : 17
+ Total Nets             : 32
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 147
+
+ Total Simulation Time: 0.140625 sec
+
+ Current Memory Usage: 1657.12 Meg
+
+Sat Nov 11 16:53:20 2017
+

@@ -1,0 +1,89 @@
+
+
+NET "a" LOC = R15;
+NET "b" LOC = R16;
+NET "c" LOC = P17;
+NET "Clock" LOC = C9;
+NET "d" LOC = M15;
+NET "e" LOC = M18;
+NET "rs" LOC = L18;
+NET "rw" LOC = L17;
+NET "sf_e" LOC = D16;
+
+
+
+
+
+NET "Resetbtn" LOC = K17;
+
+
+NET "Resetbtn" PULLDOWN;
+
+
+NET "Resetbtn" IOSTANDARD = LVTTL;
+NET "a" IOSTANDARD = LVCMOS33;
+NET "b" IOSTANDARD = LVCMOS33;
+NET "c" IOSTANDARD = LVCMOS33;
+NET "d" IOSTANDARD = LVCMOS33;
+NET "e" IOSTANDARD = LVCMOS33;
+NET "Clock" IOSTANDARD = LVCMOS25;
+NET "rs" IOSTANDARD = LVCMOS33;
+NET "rw" IOSTANDARD = LVCMOS33;
+NET "sf_e" IOSTANDARD = LVCMOS33;
+NET "a" DRIVE = 4;
+NET "b" DRIVE = 4;
+NET "c" DRIVE = 4;
+NET "d" DRIVE = 4;
+NET "e" DRIVE = 4;
+NET "rs" DRIVE = 4;
+NET "rw" DRIVE = 4;
+NET "sf_e" DRIVE = 4;
+
+# PlanAhead Generated IO constraints 
+
+NET "a_button" IOSTANDARD = LVTTL;
+
+# PlanAhead Generated physical constraints 
+
+NET "a_button" LOC = K18;
+
+# PlanAhead Generated IO constraints 
+
+NET "a_button" PULLUP;
+
+# PlanAhead Generated physical constraints 
+
+NET "b_button" LOC = G18;
+
+# PlanAhead Generated IO constraints 
+
+NET "b_button" IOSTANDARD = LVTTL;
+NET "b_button" PULLUP;
+
+# PlanAhead Generated physical constraints 
+
+NET "Rot_btn" LOC = V16;
+
+# PlanAhead Generated IO constraints 
+
+NET "Rot_btn" IOSTANDARD = LVTTL;
+NET "Rot_btn" PULLDOWN;
+
+# PlanAhead Generated physical constraints 
+
+NET "led0" LOC = F12;
+
+# PlanAhead Generated IO constraints 
+
+NET "led0" IOSTANDARD = LVTTL;
+NET "led0" DRIVE = 4;
+NET "led0" SLEW = FAST;
+
+# PlanAhead Generated physical constraints 
+
+NET "switch1" LOC = L13;
+
+# PlanAhead Generated IO constraints 
+
+NET "switch1" IOSTANDARD = LVTTL;
+NET "switch1" PULLUP;

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym debouncer C:/Users/johnsor2/Downloads/alu2/remote_sources/_/debounce/debouncer.sch {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final SVN/Processor_Project/debouncer.sym} 

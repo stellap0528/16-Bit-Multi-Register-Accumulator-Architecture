@@ -1,0 +1,382 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Final_Processor.vf
+// /___/   /\     Timestamp : 11/11/2017 20:28:55
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/ipcore_dir" -intstyle ise -family spartan3e -verilog "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Final_Processor.vf" -w "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/SVN Output/Processor_Project/Final_Processor.sch"
+//Design Name: Final_Processor
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Append_Buffer_MUSER_Final_Processor(Lower_12_Imm, 
+                                           Upper_4_PC, 
+                                           Append_Out);
+
+    input [11:0] Lower_12_Imm;
+    input [3:0] Upper_4_PC;
+   output [15:0] Append_Out;
+   
+   
+   BUF  XLXI_85 (.I(Lower_12_Imm[4]), 
+                .O(Append_Out[4]));
+   BUF  XLXI_86 (.I(Lower_12_Imm[3]), 
+                .O(Append_Out[3]));
+   BUF  XLXI_87 (.I(Lower_12_Imm[2]), 
+                .O(Append_Out[2]));
+   BUF  XLXI_88 (.I(Lower_12_Imm[1]), 
+                .O(Append_Out[1]));
+   BUF  XLXI_89 (.I(Lower_12_Imm[0]), 
+                .O(Append_Out[0]));
+   BUF  XLXI_91 (.I(Upper_4_PC[3]), 
+                .O(Append_Out[15]));
+   BUF  XLXI_92 (.I(Upper_4_PC[2]), 
+                .O(Append_Out[14]));
+   BUF  XLXI_93 (.I(Upper_4_PC[1]), 
+                .O(Append_Out[13]));
+   BUF  XLXI_94 (.I(Upper_4_PC[0]), 
+                .O(Append_Out[12]));
+   BUF  XLXI_95 (.I(Lower_12_Imm[11]), 
+                .O(Append_Out[11]));
+   BUF  XLXI_96 (.I(Lower_12_Imm[10]), 
+                .O(Append_Out[10]));
+   BUF  XLXI_97 (.I(Lower_12_Imm[9]), 
+                .O(Append_Out[9]));
+   BUF  XLXI_98 (.I(Lower_12_Imm[8]), 
+                .O(Append_Out[8]));
+   BUF  XLXI_99 (.I(Lower_12_Imm[7]), 
+                .O(Append_Out[7]));
+   BUF  XLXI_100 (.I(Lower_12_Imm[6]), 
+                 .O(Append_Out[6]));
+   BUF  XLXI_101 (.I(Lower_12_Imm[5]), 
+                 .O(Append_Out[5]));
+endmodule
+`timescale 1ns / 1ps
+
+module FD16RE_MXILINX_Final_Processor(C, 
+                                      CE, 
+                                      D, 
+                                      R, 
+                                      Q);
+
+    input C;
+    input CE;
+    input [15:0] D;
+    input R;
+   output [15:0] Q;
+   
+   
+   FDRE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .D(D[0]), 
+              .R(R), 
+              .Q(Q[0]));
+   FDRE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .D(D[1]), 
+              .R(R), 
+              .Q(Q[1]));
+   FDRE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .D(D[2]), 
+              .R(R), 
+              .Q(Q[2]));
+   FDRE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .D(D[3]), 
+              .R(R), 
+              .Q(Q[3]));
+   FDRE #( .INIT(1'b0) ) I_Q4 (.C(C), 
+              .CE(CE), 
+              .D(D[4]), 
+              .R(R), 
+              .Q(Q[4]));
+   FDRE #( .INIT(1'b0) ) I_Q5 (.C(C), 
+              .CE(CE), 
+              .D(D[5]), 
+              .R(R), 
+              .Q(Q[5]));
+   FDRE #( .INIT(1'b0) ) I_Q6 (.C(C), 
+              .CE(CE), 
+              .D(D[6]), 
+              .R(R), 
+              .Q(Q[6]));
+   FDRE #( .INIT(1'b0) ) I_Q7 (.C(C), 
+              .CE(CE), 
+              .D(D[7]), 
+              .R(R), 
+              .Q(Q[7]));
+   FDRE #( .INIT(1'b0) ) I_Q8 (.C(C), 
+              .CE(CE), 
+              .D(D[8]), 
+              .R(R), 
+              .Q(Q[8]));
+   FDRE #( .INIT(1'b0) ) I_Q9 (.C(C), 
+              .CE(CE), 
+              .D(D[9]), 
+              .R(R), 
+              .Q(Q[9]));
+   FDRE #( .INIT(1'b0) ) I_Q10 (.C(C), 
+               .CE(CE), 
+               .D(D[10]), 
+               .R(R), 
+               .Q(Q[10]));
+   FDRE #( .INIT(1'b0) ) I_Q11 (.C(C), 
+               .CE(CE), 
+               .D(D[11]), 
+               .R(R), 
+               .Q(Q[11]));
+   FDRE #( .INIT(1'b0) ) I_Q12 (.C(C), 
+               .CE(CE), 
+               .D(D[12]), 
+               .R(R), 
+               .Q(Q[12]));
+   FDRE #( .INIT(1'b0) ) I_Q13 (.C(C), 
+               .CE(CE), 
+               .D(D[13]), 
+               .R(R), 
+               .Q(Q[13]));
+   FDRE #( .INIT(1'b0) ) I_Q14 (.C(C), 
+               .CE(CE), 
+               .D(D[14]), 
+               .R(R), 
+               .Q(Q[14]));
+   FDRE #( .INIT(1'b0) ) I_Q15 (.C(C), 
+               .CE(CE), 
+               .D(D[15]), 
+               .R(R), 
+               .Q(Q[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module Final_Processor(Clock, 
+                       Input_Data, 
+                       Reset, 
+                       isZero, 
+                       Output_Data);
+
+    input Clock;
+    input [15:0] Input_Data;
+    input Reset;
+   output isZero;
+   output [15:0] Output_Data;
+   
+   wire [15:0] A;
+   wire [15:0] Acc_Out;
+   wire [2:0] ALUctrl;
+   wire ALUwrite;
+   wire [15:0] ALU_Out;
+   wire [15:0] ALU_output;
+   wire [15:0] append;
+   wire Asel;
+   wire Awrite;
+   wire [15:0] B;
+   wire Bsel;
+   wire Bwrite;
+   wire [1:0] destAddr;
+   wire [2:0] destData;
+   wire inDataWrite;
+   wire [1:0] IorM;
+   wire [15:0] IorM_out;
+   wire [15:0] IR;
+   wire IRwrite;
+   wire [15:0] IR_Reg_Out;
+   wire [15:0] isZeroData;
+   wire isZeroWrite;
+   wire ItypeSel;
+   wire [1:0] jControl;
+   wire [15:0] Jump_ZE;
+   wire [15:0] memRead;
+   wire MemWrite;
+   wire Mwrite;
+   wire [15:0] M_out;
+   wire [15:0] PCData;
+   wire PCwrite;
+   wire [15:0] PC_Out;
+   wire [15:0] PC_Plus_4;
+   wire RegWrite;
+   wire [15:0] r_out;
+   wire [3:0] write_address;
+   wire [15:0] XLXN_56;
+   wire [15:0] XLXN_101;
+   wire [15:0] XLXN_130;
+   wire [15:0] XLXN_131;
+   wire [3:0] XLXN_147;
+   wire [15:0] XLXN_152;
+   wire [15:0] XLXN_156;
+   wire [3:0] XLXN_169;
+   wire [15:0] XLXN_177;
+   wire [15:0] XLXN_188;
+   wire XLXN_332;
+   wire [15:0] XLXN_333;
+   wire [15:0] XLXN_346;
+   wire [15:0] XLXN_354;
+   wire isZero_DUMMY;
+   
+   assign XLXN_147 = 4'hF;
+   assign XLXN_169 = 4'h2;
+   assign XLXN_188 = 16'h0001;
+   assign isZero = isZero_DUMMY;
+   ALU_16bit  ALU (.a(A[15:0]), 
+                  .ALUctrl(ALUctrl[2:0]), 
+                  .b(B[15:0]), 
+                  .ALUOut(ALU_output[15:0]), 
+                  .iszero(isZero_DUMMY), 
+                  .Overflow());
+   (* HU_SET = "B_Reg_18" *) 
+   FD16RE_MXILINX_Final_Processor  B_Reg (.C(Clock), 
+                                         .CE(Bwrite), 
+                                         .D(XLXN_131[15:0]), 
+                                         .R(Reset), 
+                                         .Q(B[15:0]));
+   Control_Unit  Control (.acc15(Acc_Out[15]), 
+                         .CLK(Clock), 
+                         .Func(IR[7:5]), 
+                         .noOp(XLXN_332), 
+                         .Opcode(IR[15:12]), 
+                         .Reset(Reset), 
+                         .toaccIn(IR[0]), 
+                         .ALUCtrl(ALUctrl[2:0]), 
+                         .ALUWrite(ALUwrite), 
+                         .Asel(Asel), 
+                         .Awrite(Awrite), 
+                         .Bsel(Bsel), 
+                         .Bwrite(Bwrite), 
+                         .destAdr(destAddr[1:0]), 
+                         .destData(destData[2:0]), 
+                         .inDataWrite(inDataWrite), 
+                         .IorM(IorM[1:0]), 
+                         .IRWrite(IRwrite), 
+                         .IsZeroWrite(isZeroWrite), 
+                         .ItypeSel(ItypeSel), 
+                         .Jcontrol(jControl[1:0]), 
+                         .MemWrite(MemWrite), 
+                         .MWrite(Mwrite), 
+                         .PCWrite(PCwrite), 
+                         .RegWrite(RegWrite));
+   Mux_16bit_2i_1o  Irmux (.a(IR_Reg_Out[15:0]), 
+                          .b(memRead[15:0]), 
+                          .s(IRwrite), 
+                          .r(IR[15:0]));
+   Mux_16bit_2i_1o  ItypeSel_Mux (.a(XLXN_56[15:0]), 
+                                 .b(XLXN_333[15:0]), 
+                                 .s(ItypeSel), 
+                                 .r(r_out[15:0]));
+   (* HU_SET = "PC_Reg_23" *) 
+   FD16RE_MXILINX_Final_Processor  PC_Reg (.C(Clock), 
+                                          .CE(PCwrite), 
+                                          .D(PCData[15:0]), 
+                                          .R(Reset), 
+                                          .Q(PC_Out[15:0]));
+   ZeroExtend_12bit  XLXI_4 (.a(IR[11:0]), 
+                            .r(XLXN_56[15:0]));
+   Mux_16bit_2i_1o  XLXI_7 (.a(XLXN_354[15:0]), 
+                           .b(r_out[15:0]), 
+                           .s(Bsel), 
+                           .r(XLXN_131[15:0]));
+   Mux_16bit_2i_1o  XLXI_8 (.a(XLXN_101[15:0]), 
+                           .b(Acc_Out[15:0]), 
+                           .s(Asel), 
+                           .r(XLXN_130[15:0]));
+   (* HU_SET = "XLXI_10_19" *) 
+   FD16RE_MXILINX_Final_Processor  XLXI_10 (.C(Clock), 
+                                           .CE(Awrite), 
+                                           .D(XLXN_130[15:0]), 
+                                           .R(Reset), 
+                                           .Q(A[15:0]));
+   (* HU_SET = "XLXI_13_20" *) 
+   FD16RE_MXILINX_Final_Processor  XLXI_13 (.C(Clock), 
+                                           .CE(IRwrite), 
+                                           .D(memRead[15:0]), 
+                                           .R(Reset), 
+                                           .Q(IR_Reg_Out[15:0]));
+   SignExtend_12bit  XLXI_29 (.a(IR[11:0]), 
+                             .r(XLXN_333[15:0]));
+   SignExtend_8bit  XLXI_30 (.a(IR[7:0]), 
+                            .r(XLXN_101[15:0]));
+   (* HU_SET = "XLXI_58_22" *) 
+   FD16RE_MXILINX_Final_Processor  XLXI_58 (.C(Clock), 
+                                           .CE(ALUwrite), 
+                                           .D(ALU_output[15:0]), 
+                                           .R(Reset), 
+                                           .Q(ALU_Out[15:0]));
+   LeftShift_4  XLXI_63 (.a(XLXN_156[15:0]), 
+                        .r(XLXN_152[15:0]));
+   ZeroExtend_4bit  XLXI_64 (.a(IR_Reg_Out[11:8]), 
+                            .r(XLXN_156[15:0]));
+   (* HU_SET = "XLXI_65_21" *) 
+   FD16RE_MXILINX_Final_Processor  XLXI_65 (.C(Clock), 
+                                           .CE(Mwrite), 
+                                           .D(memRead[15:0]), 
+                                           .R(Reset), 
+                                           .Q(M_out[15:0]));
+   Mux_16bit_4i_1o  XLXI_66 (.a(PC_Plus_4[15:0]), 
+                            .b(XLXN_177[15:0]), 
+                            .c(append[15:0]), 
+                            .d(ALU_Out[15:0]), 
+                            .s(jControl[1:0]), 
+                            .r(PCData[15:0]));
+   Mux_4bit_3i_1o  XLXI_67 (.a(IR_Reg_Out[11:8]), 
+                           .b(XLXN_147[3:0]), 
+                           .c(XLXN_169[3:0]), 
+                           .s(destAddr[1:0]), 
+                           .r(write_address[3:0]));
+   Adder_16  XLXI_69 (.a(PC_Out[15:0]), 
+                     .b(r_out[15:0]), 
+                     .r(XLXN_177[15:0]));
+   Adder_16  XLXI_70 (.a(XLXN_188[15:0]), 
+                     .b(PC_Out[15:0]), 
+                     .r(PC_Plus_4[15:0]));
+   Append_Buffer_MUSER_Final_Processor  XLXI_82 (.Lower_12_Imm(Jump_ZE[11:0]), 
+                                                .Upper_4_PC(PC_Plus_4[15:12]), 
+                                                .Append_Out(append[15:0]));
+   Mux_16bit_6i_1o  XLXI_91 (.a(ALU_Out[15:0]), 
+                            .b(XLXN_152[15:0]), 
+                            .c(B[15:0]), 
+                            .d(A[15:0]), 
+                            .e(M_out[15:0]), 
+                            .f(PC_Plus_4[15:0]), 
+                            .s(destData[2:0]), 
+                            .r(XLXN_346[15:0]));
+   check_noOp  XLXI_127 (.IR(IR[15:0]), 
+                        .noOp(XLXN_332));
+   ZeroExtend_12bit  XLXI_135 (.a(IR_Reg_Out[11:0]), 
+                              .r(Jump_ZE[15:0]));
+   dualportMem  XLXI_136 (.addra(ALU_Out[7:0]), 
+                         .addrb(IorM_out[7:0]), 
+                         .clka(Clock), 
+                         .clkb(Clock), 
+                         .dina(A[15:0]), 
+                         .wea(MemWrite), 
+                         .doutb(memRead[15:0]));
+   Reg_File  XLXI_137 (.clock(Clock), 
+                      .in_data(Input_Data[15:0]), 
+                      .in_data_write(inDataWrite), 
+                      .iszero_data(isZeroData[15:0]), 
+                      .iszero_write(isZeroWrite), 
+                      .ra(IR[11:8]), 
+                      .reg_write(RegWrite), 
+                      .wa(write_address[3:0]), 
+                      .write_data(XLXN_346[15:0]), 
+                      .acc_data(Acc_Out[15:0]), 
+                      .out_data(Output_Data[15:0]), 
+                      .read_data(XLXN_354[15:0]));
+   Mux_16bit_3i_1o  XLXI_138 (.a(PC_Out[15:0]), 
+                             .b(ALU_Out[15:0]), 
+                             .c(PCData[15:0]), 
+                             .s(IorM[1:0]), 
+                             .r(IorM_out[15:0]));
+   SignExtend_1Bit  XLXI_139 (.a(isZero_DUMMY), 
+                             .r(isZeroData[15:0]));
+endmodule

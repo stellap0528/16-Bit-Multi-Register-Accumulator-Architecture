@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Nov 09 10:25:15 2017
+# Process ID: 13336
+# Log file: C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Current SVN/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Current SVN/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Current SVN/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+set_property iostandard LVTTL [get_ports [list Resetbtn]]
+set_property iostandard LVCMOS33 [get_ports [list a]]
+set_property iostandard LVCMOS33 [get_ports [list b]]
+set_property iostandard LVCMOS33 [get_ports [list c]]
+set_property iostandard LVCMOS33 [get_ports [list Clock]]
+set_property iostandard LVCMOS33 [get_ports [list d]]
+set_property iostandard LVCMOS33 [get_ports [list e]]
+set_property iostandard LVCMOS25 [get_ports [list rs]]
+set_property iostandard LVCMOS25 [get_ports [list Clock]]
+set_property iostandard LVCMOS33 [get_ports [list rs]]
+set_property iostandard LVCMOS33 [get_ports [list rw]]
+set_property iostandard LVCMOS33 [get_ports [list sf_e]]
+set_property drive 4 [get_ports [list a]]
+set_property drive 4 [get_ports [list b]]
+set_property drive 4 [get_ports [list c]]
+set_property drive 4 [get_ports [list d]]
+set_property drive 4 [get_ports [list e]]
+set_property drive 4 [get_ports [list rs]]
+set_property drive 4 [get_ports [list rw]]
+set_property drive 4 [get_ports [list sf_e]]
+save_constraints

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/Final Project SVN/Processor_Project/Control_Unit_Test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Control_Unit_Test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/Control_Unit_Test/PCWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PCWrite</obj_property>
+      <obj_property name="ObjectShortName">PCWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/IorM" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IorM</obj_property>
+      <obj_property name="ObjectShortName">IorM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/MemWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/IRWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IRWrite</obj_property>
+      <obj_property name="ObjectShortName">IRWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/ItypeSel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ItypeSel</obj_property>
+      <obj_property name="ObjectShortName">ItypeSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/Asel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Asel</obj_property>
+      <obj_property name="ObjectShortName">Asel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/Bsel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Bsel</obj_property>
+      <obj_property name="ObjectShortName">Bsel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/Awrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Awrite</obj_property>
+      <obj_property name="ObjectShortName">Awrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/Bwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Bwrite</obj_property>
+      <obj_property name="ObjectShortName">Bwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/RegWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/IsZeroWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IsZeroWrite</obj_property>
+      <obj_property name="ObjectShortName">IsZeroWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/ALUCtrl" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUCtrl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUCtrl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/Jcontrol" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Jcontrol[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Jcontrol[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/ALUWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUWrite</obj_property>
+      <obj_property name="ObjectShortName">ALUWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/destAdr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">destAdr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">destAdr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/destData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">destData[2:0]</obj_property>
+      <obj_property name="ObjectShortName">destData[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/MWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MWrite</obj_property>
+      <obj_property name="ObjectShortName">MWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/Opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Opcode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Opcode[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/Func" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Func[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Func[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/toaccIn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">toaccIn</obj_property>
+      <obj_property name="ObjectShortName">toaccIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/acc15" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">acc15</obj_property>
+      <obj_property name="ObjectShortName">acc15</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_Unit_Test/Reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+</wave_config>

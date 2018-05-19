@@ -1,0 +1,26 @@
+
+
+
+// Instantiate the module
+Mux_16bit_16i_1o instance_name (
+    .s(s), 
+    .zero(zero), 
+    .sp(sp), 
+    .ra(ra), 
+    .iszero(iszero), 
+    .s0(s0), 
+    .s1(s1), 
+    .s2(s2), 
+    .s3(s3), 
+    .t0(t0), 
+    .t1(t1), 
+    .t2(t2), 
+    .t3(t3), 
+    .t4(t4), 
+    .in_reg(in_reg), 
+    .out_reg(out_reg), 
+    .acc(acc), 
+    .r(r)
+    );
+
+

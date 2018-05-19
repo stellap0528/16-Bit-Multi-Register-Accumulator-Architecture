@@ -1,0 +1,176 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Processor_drc.vf
+// /___/   /\     Timestamp : 10/23/2017 19:40:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -sympath "C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/New Directory" -intstyle ise -family spartan3e -verilog Processor_drc.vf -w C:/Users/steffygm/Drive/Y3/Y3_Q1/CSSE232/Comp_Arch_Project_Local/CompArch_Project_Xilinx_project/Processor.sch
+//Design Name: Processor
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FD16RE_MXILINX_Processor(C, 
+                                CE, 
+                                D, 
+                                R, 
+                                Q);
+
+    input C;
+    input CE;
+    input [15:0] D;
+    input R;
+   output [15:0] Q;
+   
+   
+   FDRE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .D(D[0]), 
+              .R(R), 
+              .Q(Q[0]));
+   FDRE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .D(D[1]), 
+              .R(R), 
+              .Q(Q[1]));
+   FDRE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .D(D[2]), 
+              .R(R), 
+              .Q(Q[2]));
+   FDRE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .D(D[3]), 
+              .R(R), 
+              .Q(Q[3]));
+   FDRE #( .INIT(1'b0) ) I_Q4 (.C(C), 
+              .CE(CE), 
+              .D(D[4]), 
+              .R(R), 
+              .Q(Q[4]));
+   FDRE #( .INIT(1'b0) ) I_Q5 (.C(C), 
+              .CE(CE), 
+              .D(D[5]), 
+              .R(R), 
+              .Q(Q[5]));
+   FDRE #( .INIT(1'b0) ) I_Q6 (.C(C), 
+              .CE(CE), 
+              .D(D[6]), 
+              .R(R), 
+              .Q(Q[6]));
+   FDRE #( .INIT(1'b0) ) I_Q7 (.C(C), 
+              .CE(CE), 
+              .D(D[7]), 
+              .R(R), 
+              .Q(Q[7]));
+   FDRE #( .INIT(1'b0) ) I_Q8 (.C(C), 
+              .CE(CE), 
+              .D(D[8]), 
+              .R(R), 
+              .Q(Q[8]));
+   FDRE #( .INIT(1'b0) ) I_Q9 (.C(C), 
+              .CE(CE), 
+              .D(D[9]), 
+              .R(R), 
+              .Q(Q[9]));
+   FDRE #( .INIT(1'b0) ) I_Q10 (.C(C), 
+               .CE(CE), 
+               .D(D[10]), 
+               .R(R), 
+               .Q(Q[10]));
+   FDRE #( .INIT(1'b0) ) I_Q11 (.C(C), 
+               .CE(CE), 
+               .D(D[11]), 
+               .R(R), 
+               .Q(Q[11]));
+   FDRE #( .INIT(1'b0) ) I_Q12 (.C(C), 
+               .CE(CE), 
+               .D(D[12]), 
+               .R(R), 
+               .Q(Q[12]));
+   FDRE #( .INIT(1'b0) ) I_Q13 (.C(C), 
+               .CE(CE), 
+               .D(D[13]), 
+               .R(R), 
+               .Q(Q[13]));
+   FDRE #( .INIT(1'b0) ) I_Q14 (.C(C), 
+               .CE(CE), 
+               .D(D[14]), 
+               .R(R), 
+               .Q(Q[14]));
+   FDRE #( .INIT(1'b0) ) I_Q15 (.C(C), 
+               .CE(CE), 
+               .D(D[15]), 
+               .R(R), 
+               .Q(Q[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module Processor(Awrite, 
+                 Bwrite, 
+                 Clock, 
+                 Clock_Enable, 
+                 Data_In, 
+                 IR_Write, 
+                 iszero_write, 
+                 is_zero_data, 
+                 reg_write, 
+                 write_address, 
+                 A, 
+                 B);
+
+    input Awrite;
+    input Bwrite;
+    input Clock;
+    input Clock_Enable;
+    input [15:0] Data_In;
+    input IR_Write;
+    input iszero_write;
+    input [15:0] is_zero_data;
+    input reg_write;
+    input [3:0] write_address;
+   output [15:0] A;
+   output [15:0] B;
+   
+   wire [15:0] IR;
+   wire [15:0] XLXN_13;
+   wire [15:0] XLXN_14;
+   
+   Reg_File  XLXI_2 (.clock(Clock), 
+                    .iszero_data(is_zero_data[15:0]), 
+                    .iszero_write(iszero_write), 
+                    .ra(IR[11:8]), 
+                    .reg_write(reg_write), 
+                    .wa(write_address[3:0]), 
+                    .write_data(IR[15:0]), 
+                    .acc_data(XLXN_13[15:0]), 
+                    .read_data(XLXN_14[15:0]));
+   (* HU_SET = "XLXI_15_0" *) 
+   FD16RE_MXILINX_Processor  XLXI_15 (.C(Clock), 
+                                     .CE(Clock_Enable), 
+                                     .D(Data_In[15:0]), 
+                                     .R(IR_Write), 
+                                     .Q(IR[15:0]));
+   (* HU_SET = "XLXI_16_1" *) 
+   FD16RE_MXILINX_Processor  XLXI_16 (.C(Clock), 
+                                     .CE(Clock_Enable), 
+                                     .D(XLXN_13[15:0]), 
+                                     .R(Awrite), 
+                                     .Q(A[15:0]));
+   (* HU_SET = "XLXI_17_2" *) 
+   FD16RE_MXILINX_Processor  XLXI_17 (.C(Clock), 
+                                     .CE(Clock_Enable), 
+                                     .D(XLXN_14[15:0]), 
+                                     .R(Bwrite), 
+                                     .Q(B[15:0]));
+endmodule

@@ -1,0 +1,3 @@
+MODULE testttt
+	SUBMODULE test22
+		INSTANCE XLXI_1

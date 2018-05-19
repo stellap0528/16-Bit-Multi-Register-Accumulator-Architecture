@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/johnsor2/Documents/College/Junior/Q1/Comp Arch I/New Directory/xst"
+elaborate
+-ifn Reg_File.prj
+-ifmt mixed
